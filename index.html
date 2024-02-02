@@ -1274,6 +1274,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
-    <script src="assets/js/logincheck.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        var buttons = document.getElementsByClassName('restrict-button');
+    
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function (event) {
+                console.log('button clicked');
+                console.log(localStorage);
+                var reflowAuth = localStorage.getItem('reflowAuth');
+                console.log(reflowAuth);
+    
+                if (!reflowAuth) {
+                    event.preventDefault(); // Prevent default navigation
+                    console.log('reflowAuth: Not logged in');
+    
+                    // Get the toast element
+                    var toastEl = document.getElementById('liveToast');
+    
+                    // Create a new toast instance
+                    var toast = new bootstrap.Toast(toastEl);
+    
+                    // Show the toast
+                    toast.show();
+                }
+            });
+        }
+      });
+    </script>  
   </body>
 </html>
