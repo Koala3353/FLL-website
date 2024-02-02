@@ -1280,14 +1280,10 @@
     
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function (event) {
-                console.log('button clicked');
-                console.log(localStorage);
                 var reflowAuth = localStorage.getItem('reflowAuth');
-                console.log(reflowAuth);
     
                 if (!reflowAuth) {
                     event.preventDefault(); // Prevent default navigation
-                    console.log('reflowAuth: Not logged in');
     
                     // Get the toast element
                     var toastEl = document.getElementById('liveToast');
@@ -1300,7 +1296,8 @@
                 }
             });
         }
-      });
-    </script>  
+    });
+    </script>
   </body>
 </html>
+
