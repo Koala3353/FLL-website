@@ -1,9 +1,10 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
     var buttons = document.getElementsByClassName('restrict-button');
 
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", function (event) {
             console.log('button clicked');
+            console.log(localStorage);
             var reflowAuth = localStorage.getItem('reflowAuth');
 
             if (!reflowAuth) {
