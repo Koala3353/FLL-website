@@ -1276,30 +1276,32 @@
     <script src="assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
     <script>
       console.log('JavaScript file is loaded and executed');
-      window.addEventListener(
-        "DOMContentLoaded", () => {
-          console.log('JavaScript file is loaded and executed');
-        var buttons = document.getElementsByClassName('restrict-button');
-    
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", function (event) {
-                var reflowAuth = localStorage.getItem('reflowAuth');
-    
-                if (!reflowAuth) {
-                    event.preventDefault(); // Prevent default navigation
-    
-                    // Get the toast element
-                    var toastEl = document.getElementById('liveToast');
-    
-                    // Create a new toast instance
-                    var toast = new bootstrap.Toast(toastEl);
-    
-                    // Show the toast
-                    toast.show();
-                }
-            });
-        }
-    });
+      console.log('DOMContentLoaded event fired');
+      var buttons = document.getElementsByClassName('restrict-button');
+      console.log('Found ' + buttons.length + ' buttons');
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function (event) {
+          console.log('Button clicked');
+          var reflowAuth = localStorage.getItem('reflowAuth');
+
+          if (!reflowAuth) {
+            event.preventDefault(); // Prevent default navigation
+            console.log('Prevented default navigation');
+
+            // Get the toast element
+            var toastEl = document.getElementById('liveToast');
+            console.log('Got toast element', toastEl);
+
+            // Create a new toast instance
+            var toast = new bootstrap.Toast(toastEl);
+            console.log('Created new toast instance');
+
+            // Show the toast
+            toast.show();
+            console.log('Showed the toast');
+          }
+      });
     </script>
   </body>
 </html>
