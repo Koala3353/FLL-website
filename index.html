@@ -1275,7 +1275,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
+      console.log('JavaScript file is loaded and executed');
+      window.addEventListener(
+        "DOMContentLoaded", () => {
+          console.log('JavaScript file is loaded and executed');
         var buttons = document.getElementsByClassName('restrict-button');
     
         for (var i = 0; i < buttons.length; i++) {
@@ -1300,4 +1303,3 @@
     </script>
   </body>
 </html>
-
