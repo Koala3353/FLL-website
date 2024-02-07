@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'mainPAGE';
+	src: url(../../assets/fonts/mainPAGE.woff2) format('woff2'),
+	url(../../assets/fonts/mainPAGE.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
