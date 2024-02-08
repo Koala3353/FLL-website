@@ -2,7 +2,10 @@
 var codes = localStorage.getItem('codes');
 if (!codes) {
     // If not, initialize it
-    codes = ["code1", "code2", "code3"];
+    codes = [
+        { codes: ["code1", "code4"], divId: "hiddenDiv1" },
+        { codes: ["code2", "code5"], divId: "hiddenDiv2" }
+    ];
     localStorage.setItem('codes', JSON.stringify(codes));
 } else {
     // If it does, parse it
@@ -14,13 +17,15 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
     var enteredCode = document.getElementById('inputPassword2').value;
 
-    var codeIndex = codes.indexOf(enteredCode);
-    if (codeIndex !== -1) {
+    var codeObject = codes.find(obj => obj.codes.includes(enteredCode));
+    if (codeObject) {
         var reflowAuth = localStorage.getItem('reflowAuth');
         var parsedReflowAuth = JSON.parse(reflowAuth);
         var email = parsedReflowAuth.profile.email;
-        localStorage.setItem('resourceAccess', email);
-        codes.splice(codeIndex, 1); // Remove the used code from the array
+        var resourceAccess = JSON.parse(localStorage.getItem('resourceAccess')) || [];
+        resourceAccess.push({ email: email, divId: codeObject.divId });
+        localStorage.setItem('resourceAccess', JSON.stringify(resourceAccess));
+        codeObject.codes = codeObject.codes.filter(code => code !== enteredCode); // Remove the used code from the array
         // Update codes in localStorage
         localStorage.setItem('codes', JSON.stringify(codes));
         alert('Access granted!');
@@ -32,20 +37,22 @@ document.querySelector('form').addEventListener('submit', function(e) {
 
 window.onload = function() {
     console.log('Page has loaded');
-    var resourceAccess = localStorage.getItem('resourceAccess');
+    var resourceAccess = JSON.parse(localStorage.getItem('resourceAccess')) || [];
     var reflowAuth = localStorage.getItem('reflowAuth');
     var parsedReflowAuth = JSON.parse(reflowAuth);
 
     if (parsedReflowAuth) {
         var email = parsedReflowAuth.profile.email;
         // Rest of your code...
-        if (resourceAccess && resourceAccess === email) {
-            console.log('Access granted');
-            // Assuming the div has an id of 'hiddenDiv'
-            var hiddenDiv = document.getElementById('hiddenDiv');
-            console.log(hiddenDiv);
-            hiddenDiv.hidden = false; // Unhide the div
-        }
+        resourceAccess.forEach(function(access) {
+            if (access.email === email) {
+                console.log('Access granted');
+                // Assuming the div has an id of 'hiddenDiv'
+                var hiddenDiv = document.getElementById(access.divId);
+                console.log(hiddenDiv);
+                hiddenDiv.hidden = false; // Unhide the div
+            }
+        });
     } else {
         console.log('parsedReflowAuth is null');
     }
