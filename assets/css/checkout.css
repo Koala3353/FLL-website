@@ -10,7 +10,12 @@ span {
   color: #FFEB5B!important;
 }
 
-.ref-details {
+.ref-summary-toggle {
+  background-color:#365486!important;
+}
+
+small {
+  color: white!important;
 }
 
 .ref-tab-content {
