@@ -21,8 +21,7 @@
 }
 
 .carousel-inner img {
-  width: 70%;  /* or any custom width */
-  height: 800px; /* or any custom height */
+  height: 700px; /* or any custom height */
   object-fit: cover; /* This will make the image scale and crop to fit the size */
 }
 
