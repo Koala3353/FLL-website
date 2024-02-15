@@ -3,8 +3,8 @@ var codes = localStorage.getItem('codes');
 if (!codes) {
     // If not, initialize it
     codes = [
-        { codes: ["code1", "code4"], divId: "hiddenDiv1" },
-        { codes: ["code2", "code5"], divId: "hiddenDiv2" }
+        { codes: ["A3H7P6", "D5R9Q2"], divId: "hiddenDiv1" },
+        { codes: ["G8F4T9", "K2L6J7", "M1N5R3", "S9T2E4"], divId: "hiddenDiv2" }
     ];
     localStorage.setItem('codes', JSON.stringify(codes));
 } else {
