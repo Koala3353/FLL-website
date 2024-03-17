@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'IM FELL DW Pica';
+	src: url(../../assets/fonts/IM%20FELL%20DW%20Pica-804f1f9c150e6c915ea6439f87909881.woff2) format('woff2'),
+	url(../../assets/fonts/IM%20FELL%20DW%20Pica-80b555d5098a76096029d589f79cebc9.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

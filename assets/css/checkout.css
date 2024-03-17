@@ -1,0 +1,203 @@
+span {
+  color: #FFFFFF!important;
+}
+
+.ref-heading {
+  color: #FFFFFF;
+}
+
+.ref-back {
+  color: #FFFFFF!important;
+}
+
+.ref-summary-toggle {
+  background-color:#365486!important;
+}
+
+small {
+  color: white!important;
+}
+
+.ref-tab-content {
+}
+
+.ref-heading-small {
+  color: #FFFFFF;
+}
+
+.ref-form-control.ref-field-details-name {
+  color: #FFFFFF;
+}
+
+.ref-form-control.ref-field-details-address-line {
+  color: #FFFFFF!important;
+}
+
+.ref-form-control.ref-field-details-city {
+  color: #FFFFFF!important;
+}
+
+.ref-form-control.ref-field-details-country {
+  color: #FFFFFF!important;
+}
+
+.ref-form-control.ref-field-details-region {
+  color: #FFFFFF!important;
+}
+
+.ref-form-control.ref-field-details-postcode {
+  color: #FFFFFF!important;
+}
+
+.ref-heading-shipping-methods.ref-heading-small {
+}
+
+.ref-shipping-methods.ref-error-parent {
+  color: #FFFFFF!important;
+}
+
+#ref-field-note-seller {
+  color: #FFFFFF!important;
+}
+
+.ref-heading.ref-payment-method-name {
+  color: #FFFFFF!important;
+}
+
+.ref-payment-method-instructions {
+  color: #FFFFFF!important;
+  background-color: #365486!important;
+}
+
+.ref-delivery-card {
+  background-color: #365486!important;
+}
+
+.ref-tab.ref-shipping-tab.open {
+  background-color: #1d3b6e;
+}
+
+.ref-button.ref-add-billing {
+  background-color: var(--bs-primary)!important;
+  color: #FFFFFF!important;
+}
+
+.ref-button.ref-remove-billing {
+  color: #FFFFFF!important;
+  background-color: #00416C!important;
+}
+
+.ref-row.ref-row-region {
+}
+
+.ref-links {
+}
+
+a {
+  color: #FFFFFF!important;
+}
+
+.ref-products {
+  background-color: #365486!important;
+  color: #FFFFFF;
+}
+
+.ref-heading {
+  background-color: #365486!important;
+}
+
+.ref-checkout-summary {
+  background-color: #365486!important;
+}
+
+.ref-product-secondary {
+  color: #FFFFFF!important;
+}
+
+.ref-total-note {
+  color: #FFFFFF;
+}
+
+.ref-product-remove {
+  color: yellow!important;
+}
+
+.ref-product-col {
+  color: #FFFFFF;
+}
+
+.ref-price-col {
+  color: #FFFFFF;
+}
+
+.ref-quantity-col {
+  color: #FFFFFF;
+}
+
+.ref-total-col {
+  color: #FFFFFF;
+}
+
+.ref-product-category {
+  color: #FFFFFF!important;
+}
+
+.ref-product-variants {
+  color: #FFFFFF!important;
+}
+
+.ref-product-personalization-holder {
+  color: #FFFFFF!important;
+}
+
+.ref-product-variant {
+  color: #FFFFFF!important;
+}
+
+.ref-row {
+  color: #FFFFFF!important;
+}
+
+span {
+  color: #FFFFFF!important;
+}
+
+.ref-button.ref-button-success.ref-add-code.inactive {
+  background-color: #00416C;
+}
+
+label {
+  background-color: #1d3b6e;
+}
+
+.ref-message {
+  background-color: #365486!important;
+}
+
+.ref-discount-code-input-holder {
+  color: #000000;
+}
+
+.ref-validation-error {
+  color: #ff7468!important;
+}
+
+.ref-profile-info {
+  background-color: #00416C!important;
+}
+
+.ref-auth-button-signed {
+  background-color: #00416C!important;
+}
+
+.ref-instructions {
+  background-color: #365486!important;
+}
+
+.ref-phone-input{
+  background-color: #365486!important;
+}
+
+.important-background {
+  background-color: #365486 !important;
+}

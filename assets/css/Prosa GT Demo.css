@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Prosa GT Demo';
+	src: url(../../assets/fonts/Prosa%20GT%20Demo-8a668048af339e8305321bd651bb06a1.woff2) format('woff2'),
+	url(../../assets/fonts/Prosa%20GT%20Demo-46672a81fc09ff3a675b9c8b85cb7235.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

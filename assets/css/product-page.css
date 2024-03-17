@@ -1,0 +1,37 @@
+.ref-original-price {
+  color: #ffeb5b!important;
+}
+
+.ref-price.ref-on-sale {
+  color: #00ff47!important;
+}
+
+.ref-search {
+  color: #000000!important;
+}
+
+.ref-product-preview {
+  background-color: #365486!important;
+}
+
+.ref-title {
+  color: #ffeb5b;
+}
+
+.ref-product {
+}
+
+.ref-excerpt {
+  color: white;
+}
+
+.ref-price {
+  color: white;
+}
+
+
+
+.ref-button.preview-toggle {
+  color: white!important;
+}
+
