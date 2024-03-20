@@ -3770,6 +3770,7 @@ fieldset:disabled .btn {
   pointer-events: none;
   cursor: default;
 }
+
 .nav-tabs {
   --bs-nav-tabs-border-width: var(--bs-border-width);
   --bs-nav-tabs-border-color: var(--bs-border-color);

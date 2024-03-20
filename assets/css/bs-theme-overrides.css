@@ -35,9 +35,74 @@
   --bs-border-color: #dee2e6;
 }
 
+.navbar-nav .nav-link:hover {
+  color: #FED103 !important;
+}
+
+
+.btn-light:hover {
+  background-color: #FED103 !important;
+  color: #00416C!important;
+}
+
+.btn-light:hover .learn-more-div {
+  color: #00416C!important;
+}
+
+.link-light:hover {
+  color: #FED103 !important;
+}
+
+.footer-email {
+  background-color: #00416C !important;
+  text-decoration: none!important;
+}
+
+.bi-facebook:hover {
+  color: #FED103;
+}
+
+.bi-twitter:hover {
+  color: #FED103;
+}
+
+.bi-cart-fill:hover {
+  color: #FFFFFF;
+}
+
+.bi-cart-fill {
+  color: #FFFFFF!important;
+}
+
+.cart-svg:hover .bi-cart-fill {
+  color: #FFFFFF;
+}
+
+.bi-instagram:hover {
+  color: #FED103;
+}
+
+.footer-email:hover {
+  color: #FED103!important;
+}
+
+.footer-links:hover {
+  color: #FED103 !important;
+}
+
+.btn-primary:hover {
+  color: #00416C!important;
+}
+
+.btn-light {
+  background-color: #E63E30 !important;
+}
+
+
+
 .btn-primary {
   --bs-btn-color: #ffffff;
-  --bs-btn-bg: #E63E30; 
+  --bs-btn-bg: #E63E30 !important;
   --bs-btn-border-color: #E63E30;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #FED103!important;
@@ -220,4 +285,3 @@
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #212529;
 }
-

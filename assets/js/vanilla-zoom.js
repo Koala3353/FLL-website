@@ -47,7 +47,7 @@
             });
             
             // Zoom image on mouse enter.
-            zoomedImage.addEventListener('mouseenter', function(e) {
+            zoomedImage.addEventListener('mouseenter', function() {
                 this.style.backgroundSize = "250%"; 
             }, false);
 
@@ -73,7 +73,7 @@
 
 
             // When leaving the container zoom out the image back to normal size.
-            zoomedImage.addEventListener('mouseleave', function(e) {
+            zoomedImage.addEventListener('mouseleave', function() {
                 this.style.backgroundSize = "contain"; 
                 this.style.backgroundPosition = "left center"; 
             }, false);
