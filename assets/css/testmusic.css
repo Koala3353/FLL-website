@@ -1,0 +1,135 @@
+:root {
+    --primary: #FED103;
+    --primary-hover: #ffee96;
+    --bg: #939393;
+    --secondary: #ff0400;
+    --secondary-hover: #ff7871;
+    --dropzone-bg: #00416C;
+    --gray: #D3D3D3;
+    --border: #333333;
+    --dropzone-border: #FFF;
+    --headline: white;
+    --text: white;
+    --primary-text: #00416C;
+    --dropzone-over: #00558a;
+}
+
+#random-chord {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dropzone-box {
+    border-radius: 1rem;
+    padding: 5rem;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    min-width: 500px; /* Add this line */
+    border: 1px solid var(--border);
+    background: var(--dropzone-bg);
+    margin: auto;
+    display: flex;
+    width: 50%;
+}
+
+.dropzone-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--headline);
+}
+
+.dropzone-box p {
+    font-size: 1.15rem;
+    color: var(--gray);
+}
+
+.dropzone-area {
+    padding: 1rem;
+    position: relative;
+    margin-top: 1.5rem;
+    min-height: 16rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed var(--dropzone-border);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropzone-area .file-info {
+    font-size: 1.1rem;
+}
+
+.dropzone-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-area .file-upload-icon svg {
+    height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    stroke: var(--headline);
+}
+
+.dropzone-area:hover {
+    background: var(--dropzone-over);
+}
+
+.dropzone--over {
+    border: 2px solid var(--primary);
+    background: var(--dropzone-over);
+}
+
+.dropzone-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.dropzone-actions button {
+    flex-grow: 1;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+
+.dropzone-actions button[type='reset'] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--text);
+    background: var(--secondary);
+    cursor: pointer;
+    border: 1px solid var(--border);
+}
+
+.dropzone-actions button[type='reset']:hover {
+    background: var(--secondary-hover);
+}
+
+.dropzone-actions button[type='submit'] {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--primary-text);
+    border: none;
+    cursor: pointer;
+    background-color: #FED103;
+}
+
+.dropzone-actions button[type='submit']:hover {
+    background: var(--primary-hover);
+}

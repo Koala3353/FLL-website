@@ -1,52 +1,183 @@
 const data = [
     {
-        place: "Switzerland Alps",
-        title: "SAINT",
-        title2: "ANTONIEN",
+        place: "Level One",
+        title: "PENCILS",
+        title2: "AND SKETCHING",
         description:
-            "Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.",
-        image: "https://assets.codepen.io/3685267/timed-cards-1.jpg",
+            "Introducing our Level 1 Pencils/Sketching Kit - a comprehensive set designed to unleash your creativity on paper! This all-in-one kit offers endless possibilities for artistic expression, whether you're a beginner or a seasoned sketch artist. Unlock your potential and bring your imagination to life with our Level 1 Pencils/Sketching Kit.",
+        image: "https://i.ibb.co/7Q4tkRy/Screenshot-2024-03-23-090711.png",
     },
     {
-        place: "Japan Alps",
-        title: "NANGANO",
-        title2: "PREFECTURE",
+        place: "Level One",
+        title: "ARDUINO",
+        title2: "UNO",
         description:
-            "Nagano Prefecture, set within the majestic Japan Alps, is a cultural treasure trove with its historic shrines and temples, particularly the famous Zenkō-ji. The region is also a hotspot for skiing and snowboarding, offering some of the country's best powder.",
-        image: "https://assets.codepen.io/3685267/timed-cards-2.jpg",
+            "Our Arduino Uno Kit is crafted for aspiring engineers, tech enthusiasts, and hobbyists of all levels, offering an exciting gateway into the realm of DIY electronics and programming. Whether you're an experienced engineer or a curious beginner, this kit is designed to spark your imagination and empower you to bring your electronic projects to life with the Arduino Uno board.",
+        image: "https://i.ibb.co/BnGsQDp/Screenshot-2024-03-22-140658.png",
     },
     {
-        place: "Sahara Desert - Morocco",
-        title: "MARRAKECH",
-        title2: "MEROUGA",
+        place: "Level One, Two, and Three",
+        title: "UNSOLVED",
+        title2: "CASE",
         description:
-            "The journey from the vibrant souks and palaces of Marrakech to the tranquil, starlit sands of Merzouga showcases the diverse splendor of Morocco. Camel treks and desert camps offer an unforgettable immersion into the nomadic way of life.",
-        image: "https://assets.codepen.io/3685267/timed-cards-3.jpg",
+            "Unravel mysteries with our Unsolved Case Kits, tailored for amateur sleuths and seasoned investigators alike! Level up your detective skills and crack the case with our three intriguing levels.",
+        image: "https://i.ibb.co/XxQJ0R9/Screenshot-2024-03-23-102313.png",
     },
     {
-        place: "Sierra Nevada - USA",
-        title: "YOSEMITE",
-        title2: "NATIONAL PARAK",
+        place: "Level Three",
+        title: "KITCHEN",
+        title2: "",
         description:
-            "Yosemite National Park is a showcase of the American wilderness, revered for its towering granite monoliths, ancient giant sequoias, and thundering waterfalls. The park offers year-round recreational activities, from rock climbing to serene valley walks.",
-        image: "https://assets.codepen.io/3685267/timed-cards-4.jpg",
+            "Step into the realm of culinary creativity with our Level 3 Interior Design Kit - Kitchen Edition! Crafted for interior designers and home enthusiasts alike, this comprehensive set is designed to help you envision and create stunning kitchen spaces that blend functionality with style.  Whether you're designing a gourmet chef's paradise or a cozy family kitchen, our Level 3 kit provides the essential tools to turn your kitchen dreams into reality. Elevate your interior design skills and create kitchens that inspire culinary delights with our Interior Design Kit - Kitchen Edition.",
+        image: "https://i.ibb.co/pWBPq6d/Screenshot-2024-03-23-101947.png",
     },
     {
-        place: "Tarifa - Spain",
-        title: "LOS LANCES",
-        title2: "BEACH",
+        place: "Level One",
+        title: "HYDROPONICS",
+        title2: "",
         description:
-            "Los Lances Beach in Tarifa is a coastal paradise known for its consistent winds, making it a world-renowned spot for kitesurfing and windsurfing. The beach's long, sandy shores provide ample space for relaxation and sunbathing, with a vibrant atmosphere of beach bars and cafes.",
-        image: "https://assets.codepen.io/3685267/timed-cards-5.jpg",
+            "Aspiring botanists, immerse yourselves in the world of hydroponics with our comprehensive Hydroponics Kit! This all-in-one set equips you with everything you need to start your indoor garden adventure. Unleash your green thumb and cultivate a thriving garden with our Hydroponics Kit - your gateway to sustainable and bountiful harvests.",
+        image: "https://i.ibb.co/RcXqdsN/Screenshot-2024-03-23-101602.png",
     },
     {
-        place: "Cappadocia - Turkey",
-        title: "Göreme",
-        title2: "Valley",
+        place: "Level Two",
+        title: "ALL ABOUT",
+        title2: "BLOUSES",
         description:
-            "Göreme Valley in Cappadocia is a historical marvel set against a unique geological backdrop, where centuries of wind and water have sculpted the landscape into whimsical formations. The valley is also famous for its open-air museums, underground cities, and the enchanting experience of hot air ballooning.",
-        image: "https://assets.codepen.io/3685267/timed-cards-6.jpg",
+            "Introducing our Level 2 Pattern Making Kit - Blouses Edition! Elevate your fashion design skills with this comprehensive set tailored for creating stylish blouses.Ensure your blouses have the perfect finishing touches with 3 pieces of high-quality thread and a selection of buttons. Unlock your creativity and design beautiful blouses with our Level 2 kit, ideal for fashion enthusiasts ready to expand their repertoire.",
+        image: "https://i.ibb.co/VBZKLsP/Screenshot-2024-03-23-095031.png",
     },
+    {
+        place: "Level One",
+        title: "PUZZLES",
+        title2: "",
+        description:
+            "Introducing our Level 1 Puzzles Kit, featuring the captivating Magnetic Wooden Tangram! This classic puzzle offers endless hours of entertainment and cognitive stimulation. Crafted from high-quality wood with magnetic pieces, it's perfect for all ages. Challenge yourself or enjoy it with friends and family. Dive into the world of puzzles and enhance your problem-solving skills with our engaging Magnetic Wooden Tangram.",
+        image: "https://i.ibb.co/M53k08k/Screenshot-2024-03-23-094012.png",
+    },
+    {
+        place: "Level One",
+        title: "SKINCARE",
+        title2: "",
+        description:
+            "Introducing our Hypoallergenic Skincare Kit, a comprehensive collection designed to help you delve into the benefits of each nourishing oil and understand their role in skincare. Explore the unique qualities of each oil and unlock the secrets to healthy, radiant skin with our educational Hypoallergenic Skincare Kit.",
+        image: "https://i.ibb.co/xjHmp7V/Screenshot-2024-03-23-093843.png",
+    },
+    {
+        place: "Level Three",
+        title: "HORIZONTAL",
+        title2: "MATTRESS SUTURE",
+        description:
+            "Introducing our Level 3 Horizontal Mattress Suture Kit - the pinnacle of surgical proficiency for mastering horizontal mattress suturing techniques! Elevate your surgical skills to new heights with precision instruments and high-quality sutures, crucial for achieving secure wound closure and optimal tissue approximation. Whether you're refining your technique or preparing for complex surgical procedures, our Level 3 Horizontal Mattress Suture Kit is your ultimate tool for surgical excellence.",
+        image: "https://i.ibb.co/BVpd2Mf/Screenshot-2024-03-23-093453.png",
+    },
+    {
+        place: "Level Three",
+        title: "OIL",
+        title2: "PASTELS",
+        description:
+            "Introducing our Level 3 Oil Pastels Kit - an exquisite collection for artists ready to explore the rich, creamy world of oil pastels! Whether you're a seasoned artist or a budding creative, our Level 3 Oil Pastels Kit invites you to unlock your imagination and discover the endless possibilities of this versatile medium. Elevate your artwork and embark on a journey of self-expression with this luxurious and inspiring kit.",
+        image: "https://i.ibb.co/Nr6q5Nk/Screenshot-2024-03-23-090944.png",
+    },
+    {
+        place: "Level Two",
+        title: "ACRYLICS",
+        title2: "",
+        description:
+            "Step up your artistic game with our Level 2 Acrylics Kit, the perfect upgrade for those ready to tackle more challenging projects! Whether you're experimenting with textures, exploring abstract compositions, or diving into intricate details, our Level 2 Acrylics Kit empowers you to push the boundaries of your creativity and take your artistic endeavors to new heights. Unlock the potential of acrylic painting and unleash your imagination with this exceptional kit, designed to inspire and challenge artists of all levels.",
+        image: "https://i.ibb.co/FxVSJFn/Screenshot-2024-03-23-084224.png",
+    },
+    {
+        place: "Level Two",
+        title: "BEDROOM",
+        title2: "",
+        description:
+            "Welcome to Level 2 of our Interior Design Kit - Bedroom Edition! Dive deeper into the art of interior design with this comprehensive set, tailored specifically for crafting cozy and inviting bedroom spaces. Whether you're redesigning a personal bedroom or creating dreamy spaces for clients, our Level 2 kit equips you with the essential tools to transform any bedroom into a haven of comfort and style. Elevate your interior design skills and create bedrooms that inspire rest and relaxation with our Interior Design Kit - Bedroom Edition.",
+        image: "https://i.ibb.co/pWBPq6d/Screenshot-2024-03-23-101947.png",
+    },
+    {
+        place: "Level Three",
+        title: "ALL ABOUT",
+        title2: "JACKETS AND SWEATERS",
+        description:
+            "Introducing our Level 3 Pattern Making Kit - Jackets and Sweaters Edition! Take your fashion design skills to the next level with this comprehensive set, curated for crafting stylish jackets and cozy sweaters. Dive into the world of outerwear design and create stunning pieces with our Level 3 kit, perfect for fashion enthusiasts ready to tackle more advanced projects.",
+        image: "https://i.ibb.co/mNDT4WL/Screenshot-2024-03-23-095157.png",
+    },
+    {
+        place: "Level Three",
+        title: "PUZZLES",
+        title2: "",
+        description:
+            "Introducing our Level 3 Puzzles Kit - the ultimate challenge awaits with our 3D Wooden Cube Puzzle! Crafted intricately to test your spatial awareness and problem-solving skills, this puzzle provides hours of immersive entertainment. Construct the cube from its wooden pieces, navigating through twists and turns to complete the intricate design. Perfect for puzzle enthusiasts looking for a satisfying challenge. Elevate your puzzling experience to new dimensions with our captivating 3D Wooden Cube Puzzle.",
+        image: "https://i.ibb.co/mHzTRhP/Screenshot-2024-03-23-094345.png",
+    },
+    {
+        place: "Level Two",
+        title: "SUBTICULAR",
+        title2: "SUTURE",
+        description:
+            "Introducing our Level 2 Subcuticular Suture Kit - the next step in advancing your suturing expertise! Perfect for medical students and practitioners looking to master subtler techniques, this comprehensive kit equips you with all the essential instruments and materials needed for both interrupted and continuous subcuticular suturing. Elevate your surgical skills and refine your technique with precision instruments and high-quality sutures, essential for achieving optimal wound closure and cosmesis. Take your suturing proficiency to the next level with our Level 2 Subcuticular Suture Kit.",
+        image: "https://i.ibb.co/BVpd2Mf/Screenshot-2024-03-23-093453.png",
+    },
+    {
+        place: "Level Two",
+        title: "MARKERS",
+        title2: "",
+        description:
+            "Level up your artistic journey with our Level 2 Markers Kit - an exciting upgrade for those ready to explore new dimensions of creativity! Whether you're a seasoned artist looking to expand your toolkit or a beginner eager to experiment with new mediums, our Level 2 Markers Kit is your passport to endless artistic possibilities. Elevate your artwork and unleash your creativity with this dynamic and versatile kit - the perfect upgrade from our Level 1 Pencil/Sketching Kit.",
+        image: "https://i.ibb.co/M2yQgG1/Screenshot-2024-03-23-090825.png",
+    },
+    {
+        place: "Level One",
+        title: "WATERCOLOR",
+        title2: "",
+        description:
+            "Introducing our Level 1 Watercolor Kit, a comprehensive set tailored for budding artists! With everything you need to dive into the captivating world of watercolor painting, this kit is designed to inspire creativity and elevate your artistic journey. Each component has been carefully selected to ensure a seamless painting experience, from the quality sketchpad to the essential paint brushes. Unleash your imagination and explore the vibrant possibilities of watercolor with this exceptional kit. Whether you're a novice or a seasoned painter, this set is sure to ignite your passion for art.",
+        image: "https://i.ibb.co/KG1P03t/Screenshot-2024-03-23-084418.png",
+    },
+    {
+        place: "Level One",
+        title: "DINING",
+        title2: "ROOM",
+        description:
+            "Introducing our Level 1 Interior Design Kit - Dining Edition! Elevate your interior design skills with this comprehensive set, curated specifically for designing stylish dining spaces. Whether you're a novice designer or a seasoned pro, our Level 1 kit provides the essential tools you need to create inviting and functional dining areas that reflect your unique style. Unlock your creativity and transform any space into a stunning dining experience with our Interior Design Kit - Dining Edition.",
+        image: "https://i.ibb.co/pWBPq6d/Screenshot-2024-03-23-101947.png",
+    },
+    {
+        place: "Level One",
+        title: "ALL ABOUT",
+        title2: "PANTS",
+        description:
+            "Introducing our Level 1 Pattern Making Kit - All About Pants! Dive into the world of fashion design and master the art of creating stylish pants with this comprehensive set.Start your journey in pattern making and design with our Level 1 kit, tailored for aspiring fashion designers.",
+        image: "https://i.ibb.co/H7xghjm/Screenshot-2024-03-23-094922.png",
+    },
+    {
+        place: "Level Two",
+        title: "PUZZLES",
+        title2: "",
+        description:
+            "Welcome to Level 2 of our Puzzles Kit, where the challenge gets even more thrilling with our 120 Challenges Intelligence Games! This comprehensive set offers a diverse array of brain-teasing puzzles and games designed to sharpen your cognitive skills and enhance your problem-solving abilities. Embark on a new level of puzzling adventure and elevate your intelligence with our Level 2 Puzzles Kit.",
+        image: "https://i.ibb.co/wQDNCC6/Screenshot-2024-03-23-094029.png",
+    },
+    {
+        place: "Level One",
+        title: "OVER AND UNDER",
+        title2: "SUTURE",
+        description:
+            "Introducing our Level 1 Over and Under Suture Kit - the essential companion for mastering interrupted and continuous suturing techniques! Designed for medical students and practitioners, this comprehensive kit includes all the necessary instruments and materials to hone your skills in surgical suturing. With precision instruments and high-quality sutures, you'll learn the fundamentals of both interrupted and continuous techniques, vital for surgical proficiency. Elevate your surgical skills and gain confidence in suturing with our Level 1 Over and Under Suture Kit.",
+        image: "https://i.ibb.co/BVpd2Mf/Screenshot-2024-03-23-093453.png",
+    },
+    {
+        place: "Level Three",
+        title: "OIL",
+        title2: "PAINT",
+        description:
+            "Elevate your artistry to new heights with our Level 3 Oil Paint Kit, the ultimate upgrade for seasoned artists seeking depth and richness in their work. Whether you're drawn to the luminous glow of oil pigments or eager to delve into the complexities of this traditional medium, our Level 3 Oil Paint Kit invites you to embark on a journey of artistic discovery and unlock the full potential of your creativity. Immerse yourself in the timeless allure of oil painting and experience the transformative power of this exquisite medium with our exceptional kit.",
+        image: "https://i.ibb.co/7bNH2SG/Screenshot-2024-03-23-084932.png",
+    },
+
+
+
 ];
 
 const _ = (id) => document.getElementById(id);
@@ -104,7 +235,7 @@ function animate(target, duration, properties) {
     });
 }
 
-let order = [0, 1, 2, 3, 4, 5];
+let order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
 let detailsEven = true;
 
 let offsetTop = 200;

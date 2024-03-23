@@ -7,10 +7,10 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <head>
-      <title>SPARK</title>
+      <title>Music Test</title>
       <link
         rel="icon"
-        type="image/x-icon"
+        type="image/x-icon" 
         href="./assets/img/fll logo new.png"
       />
     </head>
@@ -78,6 +78,7 @@
     <link rel="stylesheet" href="assets/css/Pricing-Centered-badges.css" />
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+    <link rel="stylesheet" href="assets/css/testmusic.css" />
   </head>
 
   <body>
@@ -118,10 +119,10 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a
-                      class="nav-link nav-abt fs-5 link-light active"
-                      href="/kits.html"
-                      style="font-family: 'Prosa GT Demo'"
-              >Features</a
+                class="nav-link nav-abt fs-5 link-light active"
+                href="/kits.html"
+                style="font-family: 'Prosa GT Demo'"
+                >Kits</a
               >
             </li>
             <li class="nav-item">
@@ -186,449 +187,71 @@
         </div>
       </div>
     </nav>
-    <main class="page landing-page">
-      <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div
-          id="liveToast"
-          class="toast align-items-center"
-          role="alert"
-          aria-live="assertive"
-          aria-atomic="true"
-        >
-          <div class="d-flex">
-            <div class="toast-body">Kindly sign in to continue.</div>
-            <button
-              type="button"
-              class="btn-close me-2 m-auto"
-              data-bs-dismiss="toast"
-              aria-label="Close"
-            ></button>
-          </div>
+    <div id="results"></div>
+    <div id="error-message"></div>
+    <div class="container" style="margin-bottom: 15px; margin-top: 80px;">
+      <div class="row">
+        <div class="col text-center my-3">
+          <p id="random-chord" style="color: black"></p>
         </div>
       </div>
-      <section
-        class="border rounded-0 clean-block clean-hero"
-        id="home"
-        style="
-          background-image: url('./assets/img/fll logo with name new.png');
-          color: rgba(173, 216, 230, 0.7);
-          overflow: hidden;
-        "
-      >
-        <video
-          width="560"
-          height="315"
-          style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-          "
-          autoplay=""
-          muted=""
-          loop=""
-          playsinline=""
-        >
-          <source src="./assets/img/test-vid-2.mp4" type="video/mp4" />
-        </video>
-        <div class="text">
-          <h2
-            style="
-              margin-top: 27px;
-              font-family: 'mainPAGE';
-              font-size: 40px;
-              padding-top: 0px;
-              padding-bottom: 0px;
-              margin-bottom: -36px;
-              color: #365486;
-            "
-          >
-            FLL 2024
-          </h2>
-          <p
-            style="
-              font-family: 'mainPAGE';
-              font-size: 105px;
-              padding-top: 0px;
-              color: #365486;
-              padding-bottom: 0px;
-            "
-          >
-            SPARK
-          </p>
-          <p
-            class="text-end"
-            style="
-              font-family: 'Prosa GT Demo';
-              font-size: 24px;
-              margin-bottom: 26px;
-              padding-bottom: 0px;
-              padding-top: 0px;
-              margin-top: -58px;
-              color: #365486;
-            "
-          >
-            by Philippines Grace Robotics Team
-          </p>
-        </div>
-      </section>
-      <section
-        id="about"
-        class="py-4 py-xl-5"
-        style="background-color: #006ead !important"
-      >
-        <div class="container">
-          <div
-            class="bg-dark border rounded border-0 border-dark overflow-hidden"
-          >
-            <div class="row g-0" style="background-color: #006ead">
-              <div class="col-md-6">
-                <div
-                  class="text-white p-4 p-md-5"
-                  style="background-color: #006ead"
-                  data-aos="fade-up"
-                  data-aos-duration="650"
+      <div class="row">
+        <div class="col">
+          <form class="dropzone-box col-md-6 mx-auto">
+            <h2>Upload and attach files</h2>
+            <p>Click to upload or drag and drop</p>
+            <div class="dropzone-area">
+              <div class="file-upload-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-cloud-upload"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 >
-                  <h2
-                    class="fs-1 fw-bold text-light mb-3"
-                    style="
-                      font-family: 'Prosa GT Demo';
-                      color: white !important;
-                    "
-                  >
-                    ABOUT US:
-                  </h2>
-                  <p
-                    class="mb-4"
-                    style="
-                      font-family: 'Coolvetica Rg';
-                      font-size: 1.5em; /* Adjust this value to increase the font size */
-                      color: white !important;
-                      text-align: justify;
-                    "
-                  >
-                    <br />At SPARK, we believe that creativity is the spark that
-                    ignites innovation and brings joy to our lives. We are
-                    passionate about providing you with the tools and
-                    inspiration to unleash your creative potential. Whether
-                    you're a seasoned hobbyist or just starting on your creative
-                    journey, SPARK is your go-to destination for unique and
-                    exciting hobby kits.
-                  </p>
-                </div>
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"
+                  />
+                  <path d="M9 15l3 -3l3 3" />
+                  <path d="M12 12l0 9" />
+                </svg>
               </div>
-              <div
-                class="col-md-6 order-first order-md-last"
-                style="min-height: 250px"
-              >
-                <img
-                  data-aos="fade-up"
-                  data-aos-duration="650"
-                  class="w-100 h-100 fit-cover"
-                  src="./assets/img/fllteam.png"
-                />
-              </div>
+              <input
+                type="file"
+                required
+                id="upload-file"
+                name="uploaded-file"
+              />
+              <p class="file-info">No Files Selected</p>
             </div>
-          </div>
+            <div class="dropzone-actions">
+              <button type="reset">Cancel</button>
+              <button id="submit-button" type="submit" style="color: black">Save</button>
+            </div>
+          </form>
         </div>
-      </section>
-      <section class="py-4 py-xl-5" style="background-color: #00416c">
-        <div class="container">
-          <div
-            class="bg-dark border rounded border-0 border-dark overflow-hidden"
-          >
-            <div class="row g-0" style="background-color: #00416c">
-              <div class="col-md-6">
-                <div
-                  class="text-white p-4 p-md-5"
-                  data-aos="fade-up"
-                  data-aos-duration="650"
-                  style="background-color: #00416c"
-                >
-                  <h2
-                    class="fs-1 fw-bold text-light mb-3"
-                    data-aos="fade-up"
-                    data-aos-duration="650"
-                    style="font-family: 'Prosa GT Demo'"
-                  >
-                    OUR MISSION:
-                  </h2>
-                  <p
-                    class="text-light mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="650"
-                    style="
-                      font-family: 'Coolvetica Rg';
-                      font-size: 1.5em; /* Adjust this value to increase the font size */
-                      text-align: justify;
-                      color: white !important;
-                    "
-                  >
-                    <br />At the heart of SPARK is a mission to inspire and
-                    empower individuals to explore their passions and express
-                    themselves through hands-on creativity. We curate a diverse
-                    range of hobby kits designed to spark your imagination, fuel
-                    your curiosity, and turn your ideas into tangible creations.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-md-6 order-first order-md-last"
-                data-aos="fade-up"
-                data-aos-duration="650"
-                style="min-height: 250px"
-              >
-                <img
-                  data-aos="fade-up"
-                  data-aos-duration="650"
-                  class="w-100 h-100 fit-cover"
-                  src="./assets/img/fllteam2.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="py-4 py-xl-5"
-        style="background-color: #006ead !important"
-      >
-        <div
-          class="container py-4 py-xl-5"
-          style="background-color: #006ead !important"
-        >
-          <div class="row mb-5">
-            <div class="col-md-8 text-center mx-auto col-xl-10">
-              <h1
-                class="fw-bold text-light"
-                data-aos="fade-up"
-                data-aos-duration="650"
-                style="font-family: 'Prosa GT Demo'; color: white !important"
-              >
-                MEET THE TEAM
-              </h1>
-            </div>
-          </div>
-          <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3"  style="margin-top: 10px">
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/keene.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Keene Brigado</h2>
-                      <div class="profile-bio">
-                        <b>The Door Frame Breaker</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/lebron.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Lebron Dy</h2>
-                      <div class="profile-bio">
-                        <b>The Master Builder</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/paul.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Paul Lee</h2>
-                      <div class="profile-bio">
-                        <b>The Everything Man</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3"  style="margin-top: 10px">
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/luke.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Luke Sy</h2>
-                      <div class="profile-bio">
-                        <b>The Master Programmer</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/haley.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Haley Sy</h2>
-                      <div class="profile-bio">
-                        <b>Role: </b>Co-Head of Project
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/renee.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                        <h2>Renee Sy</h2>
-                        <div class="profile-bio">
-                          <b>Role: </b>Co-Head of Project
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-top: 10px">
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/sydney.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Sydney Tan</h2>
-                      <div class="profile-bio">
-                        <b>Roles: </b>Assistant Builder, Runner
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/carsten.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Carsten Dagdag</h2>
-                      <div class="profile-bio">
-                        <b>FrEsH LeMOnaDE</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/reisha.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Reisha Ng</h2>
-                      <div class="profile-bio">
-                        <b>EUGHUEGUH</b>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-top: 10px">
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/aaron.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Aaron Dy-Po</h2>
-                      <div class="profile-bio">
-                        ...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/sir.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Sir Warren</h2>
-                      <div class="profile-bio">
-                        ...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4" data-aos="fade-up" data-aos-duration="650">
-              <div class="container">
-                <div class="profile-wrapper">
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="./assets/img/pfp/maam.jpg" alt="Profile" />
-                    </div>
-                    <div class="profile-name">
-                      <h2>Ma'am Quiambao</h2>
-                      <div class="profile-bio">
-                        ...
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
+    <div
+      id="loading-screen"
+      style="
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.8)
+          url('https://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+      "
+    ></div>
     <footer class="text-light text-bg-primary">
       <div class="container py-4 py-lg-5">
         <div class="row justify-content-center">
@@ -787,6 +410,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="./assets/js/test.js"></script>
 
     <script>
       console.log("JavaScript file is loaded and executed");

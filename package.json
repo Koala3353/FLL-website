@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@sentry/browser": "^7.100.1"
+    "@sentry/browser": "^7.100.1",
+    "moises": "^3.0.6"
   }
 }
