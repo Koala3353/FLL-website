@@ -102,7 +102,7 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a
-                      class="nav-link nav-abt fs-5 link-light active"
+                      class="nav-link nav-abt fs-5 link-light"
                       href="/kits.html"
                       style="font-family: 'Prosa GT Demo'"
               >Kits</a
@@ -126,7 +126,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link fs-5 link-light active"
+                class="nav-link fs-5 link-light"
                 href="/index.html#reviews"
                 style="font-family: 'Prosa GT Demo'"
                 >Reviews</a
@@ -172,19 +172,26 @@
     </nav>
     <main
       class="text-bg-secondary page product-page"
-      style="background-color: white!important;"
+      style="background-color: #00578f!important;"
     >
       <section
         class="text-bg-secondary clean-block clean-product dark"
-        style="background-color: white!important; font-family: 'Prosa GT Demo'"
+        style="background-color: #00578f!important; font-family: 'Prosa GT Demo'"
       >
+        <div data-reflow-type="category-list" data-reflow-layout="horizontal-bar"
+             data-reflow-category-link="./product-page.html?category={id}"
+             style="
+              padding-top: 27px;
+              font-family: 'Prosa GT Demo';
+            "></div>
+
         <div class="container">
           <div
             data-reflow-type="product-search"
             data-reflow-search-url="/product-page.html"
             data-reflow-show-button="true"
             style="
-              padding-top: 0px;
+              padding-top: 0;
               margin-top: 27px;
               font-family: 'Prosa GT Demo';
             "
@@ -192,7 +199,7 @@
           <div
             data-reflow-type="product-list"
             data-reflow-shoppingcart-url="shopping-cart.html"
-            data-reflow-order="name_asc"
+            data-reflow-order="price_desc"
             data-reflow-product-link="/specific-product.html?product={id}"
             data-reflow-perpage="8"
             style="margin-top: 28px"
@@ -362,9 +369,6 @@
     ></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
     <script src="assets/js/logincheck.js"></script>
   </body>
 </html>
