@@ -188,6 +188,10 @@
   --bs-btn-disabled-border-color: #E63E30;
 }
 
+.navbar-toggler-icon{
+  background-color: #00416c;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #00416C;
   --bs-btn-border-color: #00416C;

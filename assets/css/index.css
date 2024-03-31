@@ -22,6 +22,7 @@ body {
     --bg: #141419;
 }
 
+
 *::selection {
     background: var(--primary-blue);
     color: var(--text-white);
@@ -32,6 +33,14 @@ body {
 }
 
 .show-more:hover{
+    color: #FED103!important;
+}
+
+.show-more-light{
+    color: #00578f !important;
+}
+
+.show-more-light:hover{
     color: #FED103!important;
 }
 
