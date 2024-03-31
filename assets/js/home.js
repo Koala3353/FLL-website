@@ -13,7 +13,7 @@ const data = [
         title2: "UNO",
         description:
             "The Arduino Uno Kit is designed to introduce DIY electronics and programming to aspiring engineers and tech enthusiasts, offering an exciting gateway into the field.",
-        image: "https://i.ibb.co/BnGsQDp/Screenshot-2024-03-22-140658.png",
+        image: "https://cdn.reflowhq.com/media/44259567/1771530423/87308582ecb3f4eb222bdb41fadf8226_lg.jpg",
     },
     {
         place: "Level One, Two, and Three",
@@ -190,7 +190,7 @@ const cards = data
 
 const cardContents = data
     .map(
-        (i, index) => `<div class="card-content" id="card-content-${index}">
+        (i, index) => `<div class="card-content" id="card-content-${index}" >
 <div class="content-start"></div>
 <div class="content-place">${i.place}</div>
 <div class="content-title-1">${i.title}</div>

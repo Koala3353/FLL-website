@@ -11,7 +11,7 @@ span {
 }
 
 .ref-summary-toggle {
-  background-color:#365486!important;
+  background-color:#00578f!important;
 }
 
 small {
@@ -19,34 +19,38 @@ small {
 }
 
 .ref-tab-content {
+  background-color: #00578f!important;
 }
 
 .ref-heading-small {
   color: #FFFFFF;
 }
 
+.ref-form-control {
+    background-color: white!important;
+}
 .ref-form-control.ref-field-details-name {
-  color: #FFFFFF;
+  color: black;
 }
 
 .ref-form-control.ref-field-details-address-line {
-  color: #FFFFFF!important;
+  color: black!important;
 }
 
 .ref-form-control.ref-field-details-city {
-  color: #FFFFFF!important;
+  color: black!important;
 }
 
 .ref-form-control.ref-field-details-country {
-  color: #FFFFFF!important;
+  color: black!important;
 }
 
 .ref-form-control.ref-field-details-region {
-  color: #FFFFFF!important;
+  color: black!important;
 }
 
 .ref-form-control.ref-field-details-postcode {
-  color: #FFFFFF!important;
+  color: black!important;
 }
 
 .ref-heading-shipping-methods.ref-heading-small {
@@ -57,7 +61,7 @@ small {
 }
 
 #ref-field-note-seller {
-  color: #FFFFFF!important;
+  color: black !important;
 }
 
 .ref-heading.ref-payment-method-name {
@@ -66,25 +70,25 @@ small {
 
 .ref-payment-method-instructions {
   color: #FFFFFF!important;
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .ref-delivery-card {
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .ref-tab.ref-shipping-tab.open {
-  background-color: #1d3b6e;
+  background-color: #00578f;
 }
 
 .ref-button.ref-add-billing {
-  background-color: var(--bs-primary)!important;
-  color: #FFFFFF!important;
+  background-color: #FED103!important;
+  color: #00416c!important;
 }
 
 .ref-button.ref-remove-billing {
   color: #FFFFFF!important;
-  background-color: #00416C!important;
+  background-color: #00578f!important;
 }
 
 .ref-row.ref-row-region {
@@ -96,18 +100,28 @@ small {
 a {
   color: #FFFFFF!important;
 }
+.show-more{
+  color: #FFFFFF;
+}
 
+.show-more:hover{
+  color: #FED103!important;
+}
 .ref-products {
-  background-color: #365486!important;
+  background-color: #00578f!important;
   color: #FFFFFF;
 }
 
 .ref-heading {
-  background-color: #365486!important;
+  background-color: #00578f!important;
+}
+
+.ref-page-link:hover {
+  color: #00578f!important;
 }
 
 .ref-checkout-summary {
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .ref-product-secondary {
@@ -120,6 +134,26 @@ a {
 
 .ref-product-remove {
   color: yellow!important;
+}
+
+.ref-button:hover {
+  background-color: #E63E30!important;
+  color: #FFFFFF!important;
+}
+
+.ref-button {
+  background-color: #FED103!important;
+  color: #00416c!important;
+  font-weight: 700;
+
+}
+
+.ref-name {
+  color: #FFFFFF!important;
+}
+
+.ref-description {
+    color: #FFFFFF!important;
 }
 
 .ref-product-col {
@@ -163,15 +197,14 @@ span {
 }
 
 .ref-button.ref-button-success.ref-add-code.inactive {
-  background-color: #00416C;
+  background-color: #00578f;
 }
 
 label {
-  background-color: #1d3b6e;
+  background-color: #00578f;
 }
-
 .ref-message {
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .ref-discount-code-input-holder {
@@ -191,13 +224,13 @@ label {
 }
 
 .ref-instructions {
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .ref-phone-input{
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
 .important-background {
-  background-color: #365486 !important;
+  background-color: #00578f !important;
 }

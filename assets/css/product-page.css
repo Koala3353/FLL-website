@@ -11,14 +11,22 @@
 }
 
 .ref-product-preview {
-  background-color: #365486!important;
+  background-color: #00578f!important;
 }
 
+.ref-setting>label {
+  background-color: #00578f!important;
+}
 .ref-title {
   color: #ffeb5b;
 }
 
-.ref-product {
+.ref-form-control {
+  color: black!important;
+}
+
+.ref-settings {
+  background-color: #00578f!important;
 }
 
 .ref-excerpt {
@@ -29,9 +37,24 @@
   color: white;
 }
 
+.reflow-category-list.ref-horizontal-bar {
+    background-color: #00578f!important;
+  display: grid;
+  justify-content: center;
+}
 
+.ref-cancel-search {
+    color: #00578f!important;
+  background-color: white;
+}
 
-.ref-button.preview-toggle {
+.ref-dropdown-toggle {
   color: white!important;
 }
 
+.ref-dropdown-toggle>ul {
+  background-color: #00416c!important;
+}
+.active{
+  color: yellow!important;
+}
