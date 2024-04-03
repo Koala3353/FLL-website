@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="assets/css/Video-Responsive.css">
 </head>
 
-<body style="background-color: #00416c">
+<body style="background-color: #00416c!important;">
     <nav
       class="navbar navbar-expand-lg fixed-top bg-primary clean-navbar navbar-light"
     >
@@ -79,7 +79,7 @@
             <li class="nav-item">
                 <a
                         class="nav-link nav-abt fs-5 link-light"
-                        href="/kits.html"
+                        href="/features.html"
                         style="font-family: 'Prosa GT Demo'"
                 >Kits</a
                 >
@@ -156,9 +156,9 @@
           </div>
         </div>
       </div>
-    <main class="page registration-page">
-        <section class="text-bg-secondary clean-block clean-form dark" style="background-color: #c7c7c7!important;padding-top: 180px;">
-            <div class="text-light text-bg-secondary" data-reflow-type="user-settings" style="background-color: #c7c7c7!important;"></div>
+    <main class="page registration-page" style="background-color: #00416c!important;">
+        <section class="text-bg-secondary clean-block clean-form dark" style="background-color: white!important;padding-top: 180px;">
+            <div class="text-light text-bg-secondary" data-reflow-type="user-settings" style="background-color: white!important;"></div>
         </section>
     </main>
     <footer class="text-light text-bg-primary">
@@ -234,7 +234,7 @@
                 >
                     <div class="fw-bold d-flex align-items-center mb-2">
                         <img
-                                src="../assets/img/fll%20logo%20with%20name%20new.png"
+                                src="./assets/img/fll%20logo%20with%20name%20new.png"
                                 width="144"
                                 height="67"
                         />
@@ -313,6 +313,12 @@
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/logincheck.js"></script>
+
+<script>
+    $(window).on("load", function () {
+        $(".loading").hide();
+    });
+</script>
 </body>
 
 </html>

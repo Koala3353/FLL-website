@@ -44,6 +44,34 @@
 </head>
 
 <body>
+<div
+        class="loading"
+        style="
+        background-color: #00416c;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+      "
+>
+    <div class="spinner-box" style="">
+        <div class="blue-orbit leo"></div>
+
+        <div class="green-orbit leo"></div>
+
+        <div class="red-orbit leo"></div>
+
+        <div class="white-orbit w1 leo"></div>
+        <div class="white-orbit w2 leo"></div>
+        <div class="white-orbit w3 leo"></div>
+    </div>
+</div>
     <nav
       class="navbar navbar-expand-lg fixed-top bg-primary clean-navbar navbar-light"
     >
@@ -79,7 +107,7 @@
             <li class="nav-item">
                 <a
                         class="nav-link nav-abt fs-5 link-light"
-                        href="/kits.html"
+                        href="/features.html"
                         style="font-family: 'Prosa GT Demo'"
                 >Kits</a
                 >
@@ -209,13 +237,13 @@
                     </h3>
                     <ul class="list-unstyled">
                         <li>
-                            <a
-                                    class="link-light restrict-button"
-                                    href="https://sparkfll.tech/specific-product.html?product=185155769"
-                                    style="text-decoration: none; font-family: 'Coolvetica Rg'"
-                            >Over and Under Suture</a
-                            >
-                        </li>
+                <a
+                  class="link-light restrict-button"
+                  href="https://sparkfll.tech/specific-product.html?product=1696258982"
+                  style="text-decoration: none; font-family: 'Coolvetica Rg'"
+                  >Watercolor Kit</a
+                >
+              </li>
                         <li style="text-decoration: none">
                             <a
                                     class="link-light restrict-button"
@@ -319,6 +347,11 @@
     <script src="../../../assets/js/theme.js"></script>
     <script type="module" src="../../../assets/js/logincheck.js"></script>
     <script src="../../../assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
+<script>
+    $(window).on("load", function () {
+        $(".loading").hide();
+    });
+</script>
 </body>
 
 </html>
