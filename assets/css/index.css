@@ -164,14 +164,33 @@ body {
     font-size: 0.875rem;
 }
 
-.pricing-card>ul>li:before {
+.pricing-card>ul>li>ul>li {
+    position: relative;
+    font-weight: 500;
+    list-style-type: none;
+    font-size: 0.875rem!important;
+}
+
+.pricing-card>ul>li>ul>li:before {
     content: "";
     position: absolute;
-    top: -0.125rem;
+    top: -0.425rem;
     left: -2.25rem;
     width: 2rem;
     height: 2rem;
-    background-image: url('./../img/illustrations/404.svg');
+    background-image: url('../img/mini-right.svg');
+    background-repeat: no-repeat;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.pricing-card>ul>li:before {
+    content: "";
+    position: absolute;
+    top: -0.425rem;
+    left: -2.25rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/rightarrow.svg');
     background-repeat: no-repeat;
     font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
