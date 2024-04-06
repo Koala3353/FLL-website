@@ -859,60 +859,69 @@
         </div>
         <div class="pricing-container">
           <article class="pricing-card">
-            <h3>Essential</h3>
-            <div>Essential features</div>
+            <h3>Music</h3>
+            <div>Music Package</div>
             <div class="pricing-card__price--original">
-              <s>$59.99</s>
+              <s>$9.99</s>
             </div>
-            <div class="pricing-card__price">$54.99</div>
+            <div class="pricing-card__price">$1.99</div>
             <div class="period">/ month</div>
-            <ul>
-              <li>Basic access to content and resources.</li>
-              <li>Email support with a 48-hour response time.</li>
-              <li>Access to community forums for peer-to-peer support.</li>
-              <li>Monthly newsletter with updates and tips.</li>
-              <li>Limited access to standard tools and features.</li>
+            <ul style="color: white">
+              <li>Hands-On Exercises Regarding Music</li>
+              <li>Personalized Feedback</li>
+              <li>Tailored Lessons</li>
+              <li>Free Music Practice App to Download</li>
+              <li>Awesome Reward System
+                <ul>
+                  <li>Amazon Gift Cards</li>
+                  <li>Razor Gift Cards</li>
+                  <li>And more!</li>
+                </ul>
+              </li>
             </ul>
-            <a class="enroll" href="#"> Choose Basic </a>
+            <a class="enroll" href="#"> Choose Music </a>
           </article>
+
+          <article class="pricing-card pricing-card--primary">
+            <h3>Premium</h3>
+            <div>Complete features</div>
+            <div class="pricing-card__price--original">
+              <s>$29.99</s>
+            </div>
+            <div class="pricing-card__price">$11.99</div>
+            <div class="period">/ month</div>
+            <ul style="color: white">
+              <li>All features of the Advanced Plan.</li>
+              <li>All features of the Music Plan</li>
+              <li>Early access to new vidoes (if applicable) and exercises.</li>
+              <li>High-priority customer service with instant chat support.</li>
+            </ul>
+            <a class="enroll" href="#"> Choose Premium </a>
+          </article>
+
           <article class="pricing-card">
             <h3>Advanced</h3>
             <div>Advanced features</div>
             <div class="pricing-card__price--original">
-              <s>$112.00</s>
+              <s>$39.99</s>
             </div>
-            <div class="pricing-card__price">$89.99</div>
+            <div class="pricing-card__price">$9.99</div>
             <div class="period">/ month</div>
-            <ul>
-              <li>All features of the Essential Plan.</li>
-              <li>Priority email support with a 24-hour response time.</li>
-              <li>Access to exclusive webinars and online events.</li>
-              <li>Enhanced tools and features, including analytics.</li>
-              <li>
-                Customizable content experience based on user preferences.
+            <ul style="color: white">
+              <li>Access to all activities of hobbies except for music.</li>
+              <li>Personalized Feedback</li>
+              <li>Tailored Lessons</li>
+              <li>Awesome Reward System
+                <ul>
+                  <li>Amazon Gift Cards</li>
+                  <li>Razor Gift Cards</li>
+                  <li>And more!</li>
+                </ul>
               </li>
             </ul>
             <a class="enroll" href="#"> Choose Advanced </a>
           </article>
 
-          <article class="pricing-card pricing-card--primary">
-            <div class="pricing-card__banner">Most popular</div>
-            <h3>Pro</h3>
-            <div>Advanced features</div>
-            <div class="pricing-card__price--original">
-              <s>$125.00</s>
-            </div>
-            <div class="pricing-card__price">$94.99</div>
-            <div class="period">/ month</div>
-            <ul>
-              <li>All features of the Advanced Plan.</li>
-              <li>Dedicated account manager for personalized assistance.</li>
-              <li>Early access to new features and beta programs.</li>
-              <li>Advanced analytics and detailed reports.</li>
-              <li>High-priority customer service with instant chat support.</li>
-            </ul>
-            <a class="enroll" href="#"> Choose Pro </a>
-          </article>
         </div>
       </div>
     </section>
@@ -1893,7 +1902,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script type="module">
+      import Auth from 'https://cdn.jsdelivr.net/npm/@reflowhq/auth@2.1.3/dist/index.min.js';
+      window.auth = new Auth({ storeID: "44259567" });
+      console.log(auth.user);
+  </script>
     <script>
       console.log("JavaScript file is loaded and executed");
       console.log("DOMContentLoaded event fired");
