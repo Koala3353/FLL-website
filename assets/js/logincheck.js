@@ -1,6 +1,18 @@
 window.addEventListener("DOMContentLoaded", () => {
     try {
-        var buttons = document.getElementsByClassName('restrict-button');
+        var blocker = document.querySelector('.loginrequired');
+        var buttons = document.getElementsByClassName('loginrequired');
+
+        console.log(localStorage);
+        var reflowAuth = localStorage.getItem('reflowAuth');
+        console.log(reflowAuth);
+
+        if (!reflowAuth) {
+            console.log('reflowAuth: Not logged in');
+            blocker.classList.add('active');
+        } else {
+            blocker.classList.remove('active');
+        }
 
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function (event) {
@@ -15,13 +27,12 @@ window.addEventListener("DOMContentLoaded", () => {
                         console.log('reflowAuth: Not logged in');
 
                         // Get the toast element
-                        var toastEl = document.getElementById('liveToast');
-
-                        // Create a new toast instance
-                        var toast = new bootstrap.Toast(toastEl);
-
-                        // Show the toast
-                        toast.show();
+                        var notification = document.querySelector('.notification');
+                        notification.style.display = 'block'; // or 'flex' if you're using a flex layout
+                        // Hide the notification after 3 seconds
+                        setTimeout(function() {
+                            notification.style.display = 'none';
+                        }, 3000);
                     }
                 } catch (error) {
                     console.error('An error occurred in the click event handler:', error);
