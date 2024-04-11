@@ -51,5 +51,5 @@ if(document.readyState === 'complete') {
 } else {
     //add delay
     console.log("DELAY");
-    setTimeout(checkLoginStatus, 3000);
+    setTimeout(checkLoginStatus, 2000);
 }

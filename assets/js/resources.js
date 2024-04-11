@@ -48,7 +48,17 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
                 $('#pencilsSketchingDiv').removeAttr('hidden');
                 console.log("Pencils Sketching");
             }
+
+            if (!owned.includes(ARDUINO) && !owned.includes(PENCILS_SKETCHING)) {
+                $('#no-tuts').removeAttr('hidden');
+
+            }
 })
-        .catch((error) => console.error(error));
+        .catch((error) => {
+            $('#no-tuts').removeAttr('hidden');
+        });
 })
-.catch(error => console.error('Error:', error));
+.catch(() => {
+    $('#no-tuts').removeAttr('hidden');
+
+});
