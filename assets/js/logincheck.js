@@ -46,6 +46,8 @@ function checkLoginStatus() {
 }
 
 if(document.readyState === 'complete') {
+    console.log("doe");
+
     checkLoginStatus();
 } else {
     //add delay
