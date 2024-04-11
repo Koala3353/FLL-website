@@ -47,13 +47,9 @@ function checkLoginStatus() {
 
 if(document.readyState === 'complete') {
     console.log("doe");
-
     checkLoginStatus();
 } else {
     //add delay
     console.log("DELAY");
-    window.addEventListener("DOMContentLoaded", () => {
-        console.log("DOM LOADED");
-        checkLoginStatus()
-    });
+    setTimeout(checkLoginStatus, 3000);
 }
