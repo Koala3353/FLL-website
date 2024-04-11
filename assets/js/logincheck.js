@@ -2,6 +2,7 @@ console.log(document.readyState);
 
 console.log("TEST");
 function checkLoginStatus() {
+    console.log("RUNNING")
     try {
         var blocker = document.querySelector('.loginrequired');
 
@@ -48,5 +49,5 @@ if(document.readyState === 'complete') {
     checkLoginStatus();
 } else {
     //add delay
-    setTimeout(checkLoginStatus, 4000);
+    window.on('load', checkLoginStatus);
 }
