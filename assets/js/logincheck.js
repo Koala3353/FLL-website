@@ -42,7 +42,7 @@ function checkLoginStatus() {
     }
 }
 
-if(document.readyState !== 'loading') {
+if(document.readyState === 'complete') {
     checkLoginStatus();
 } else {
     window.addEventListener("DOMContentLoaded", checkLoginStatus);
