@@ -1,3 +1,5 @@
+console.log(document.readyState);
+
 console.log("TEST");
 function checkLoginStatus() {
     try {
