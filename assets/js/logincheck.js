@@ -1,3 +1,4 @@
+console.log("TEST");
 function checkLoginStatus() {
     try {
         var blocker = document.querySelector('.loginrequired');
