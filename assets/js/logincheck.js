@@ -49,5 +49,6 @@ if(document.readyState === 'complete') {
     checkLoginStatus();
 } else {
     //add delay
-    window.on('load', checkLoginStatus);
+    console.log("DELAY");
+    setTimeout(checkLoginStatus, 4000);
 }
