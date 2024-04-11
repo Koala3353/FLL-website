@@ -52,5 +52,8 @@ if(document.readyState === 'complete') {
 } else {
     //add delay
     console.log("DELAY");
-    window.addEventListener("DOMContentLoaded", () => checkLoginStatus());
+    window.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM LOADED");
+        checkLoginStatus()
+    });
 }
