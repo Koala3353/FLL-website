@@ -84,10 +84,51 @@ fetch(
                 console.log(result);
                 const parsedResult = JSON.parse(result);
                 const activityName = parsedResult.document.title;
-                const activityDesc = parsedResult.document.content;
+                let answers = [];
                 $(".activity-title").text(activityName);
-                $(".test-button").attr("href", "./exam.html?activity=" + activity_id);
-                $(".activity-desc").html(activityDesc);
+                let options = [];
+
+
+                for (let i = 1; i <= 3; i++) {
+                    let question = parsedResult.document.questions[i-1][0];
+                    $(".activity-desc-" + i).html(question);
+                    for (let z = 1; z <= 4; z++) {
+                        options.push(parsedResult.document.questions[i-1][z]);
+                    }
+                    console.log(options);
+
+                    function shuffle(array) {
+                        var currentIndex = array.length, temporaryValue, randomIndex;
+
+                        // While there remain elements to shuffle...
+                        while (0 !== currentIndex) {
+
+                            // Pick a remaining element...
+                            randomIndex = Math.floor(Math.random() * currentIndex);
+                            currentIndex -= 1;
+
+                            // And swap it with the current element.
+                            temporaryValue = array[currentIndex];
+                            array[currentIndex] = array[randomIndex];
+                            array[randomIndex] = temporaryValue;
+                        }
+
+                        return array;
+                    }
+                    let shuffledOptions = shuffle(options); // Shuffle the array
+
+                    for (let j = 'a'.charCodeAt(0); j <= 'd'.charCodeAt(0); j++) {
+                        let option = String.fromCharCode(j);
+                        let selector = ".option" + i + option;
+                        // Do something with the selected element
+                        $(selector).html(shuffledOptions[j - 'a'.charCodeAt(0)]);
+
+                    }
+                    answers.push(parsedResult.document.questions[i-1][1]);
+                    options = [];
+                }
+
+                console.log(answers)
                 console.log("done");
                 $(".loading").hide();
             })
