@@ -41,24 +41,29 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
     const owned = parsedResult.document.owned;
             if (owned.includes(ARDUINO)) {
                 $('#arduinoDiv').removeAttr('hidden');
+                $(".loading").hide();
                 console.log("Arduino");
             }
 
             if (owned.includes(PENCILS_SKETCHING)) {
                 $('#pencilsSketchingDiv').removeAttr('hidden');
+                $(".loading").hide();
                 console.log("Pencils Sketching");
             }
 
             if (!owned.includes(ARDUINO) && !owned.includes(PENCILS_SKETCHING)) {
                 $('#no-tuts').removeAttr('hidden');
+                $(".loading").hide();
 
             }
 })
         .catch((error) => {
             $('#no-tuts').removeAttr('hidden');
+            $(".loading").hide();
+
         });
 })
 .catch(() => {
     $('#no-tuts').removeAttr('hidden');
-
+    $(".loading").hide();
 });

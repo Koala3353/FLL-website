@@ -43,18 +43,26 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
                 // get all buttons with music-download-restrict as class
                 $('.hobby-download-restrict').addClass('disabled');
                 console.log("Explorer");
+
             }
 
             if (!owned.includes(MUSIC)) {
                 $('.music-download-restrict').addClass('disabled');
                 console.log("Music");
             }
-})
+            $(".loading").hide();
+
+        })
         .catch((error) => {
-            $('#no-tuts').removeAttr('hidden');
+            $('.music-download-restrict').addClass('disabled');
+            $('.hobby-download-restrict').addClass('disabled');
+            $(".loading").hide();
+
         });
 })
 .catch(() => {
-    $('#no-tuts').removeAttr('hidden');
+    $('.music-download-restrict').addClass('disabled');
+    $('.hobby-download-restrict').addClass('disabled');
+    $(".loading").hide();
 
 });
