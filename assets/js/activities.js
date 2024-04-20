@@ -104,7 +104,7 @@ fetch(
         }
 
         if (hobbyId === MATH) {
-            hobbyImg = "./assets/img/hobbies/math.webp";
+            hobbyImg = "./assets/img/hobbies/anatomy.webp";
         }
 
         if (hobbyId === PROGRAMMING) {
@@ -112,7 +112,7 @@ fetch(
         }
 
         if (hobbyId === DRAWING) {
-          hobbyImg = "./assets/img/hobbies/drawing.jpg";
+          hobbyImg = "./assets/img/hobbies/psychology.webp";
         }
 
         // Define the constant parts of the HTML content
