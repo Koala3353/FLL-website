@@ -190,7 +190,7 @@ fetch(
               // Access properties of the activity object
               console.log(activities[i][0]);
               let htmlContent =
-                  htmlStart + activities[i][3] + html1 + hobbyName + html2 + (i+1).toString() +
+                  htmlStart + activities[i][3] + html1 + "30 credits" + html2 + (i+1).toString() +
                   html3 + activities[i][1] + html4 + activities[i][2] +
                   html5 + activities[i][0] + html6;
 
