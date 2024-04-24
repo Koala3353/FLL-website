@@ -155,14 +155,11 @@ document.querySelector('.test-button').addEventListener('click', function(e) {
 
     let radioButtons = document.querySelectorAll('input[type="radio"]');
 
-    console.log(answers);
     let correct = 0;
     for (let i = 0; i < radioButtons.length; i++) {
         if (radioButtons[i].checked) {
-            console.log(`Radio button ${i + 1} is checked.`);
             let radioText = radioButtons[i].labels[0].textContent;
             if (answers.includes(radioText)) {
-                console.log(`The answer ${radioText} is in the answers array.`);
                 correct++;
             }
         }
@@ -181,7 +178,6 @@ document.querySelector('.test-button').addEventListener('click', function(e) {
         )
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 window.location.href = "./../../exam-passed.html?reward=" + data;
             })
             .catch((error) => {
@@ -202,24 +198,6 @@ document.querySelector('.test-button').addEventListener('click', function(e) {
         )
             .then((response) => response.json())
             .then((data) => {
-                console.log("ADDED ATTEMPT");
-                fetch(
-                    "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/addattempt?arg1=" + userId + "&arg2=" + activity_id,
-                    {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                    }
-                )
-                    .then((response) => response.json())
-                    .then((data) => {
-                        console.log(data);
-                    })
-                    .catch((error) => {
-                        console.error("An error occurred:", error);
-                    });
-
                 window.location.href = "./../../exam-failed.html?activity=" + activity_id + "&correct=" + correct;
             })
             .catch((error) => {
