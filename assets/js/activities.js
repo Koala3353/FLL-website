@@ -186,20 +186,35 @@ fetch(
         </div>
       </div>`;
 
-          for (let i = 0; i < activities.length; i++) {
-              // Access properties of the activity object
-              console.log(activities[i][0]);
-              let htmlContent =
-                  htmlStart + activities[i][3] + html1 + "30 credits" + html2 + (i+1).toString() +
-                  html3 + activities[i][1] + html4 + activities[i][2] +
-                  html5 + activities[i][0] + html6;
-
-              // Select the div with the class 'activity-load'
-              let activityLoadDiv = document.querySelector(".activity-load");
-
-              // Add the HTML content to the div
-              activityLoadDiv.innerHTML += htmlContent;
+          async function fetchActivityStatus(userId, activityElement) {
+              let url = "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/activitystatus?arg1=" + userId + "&arg2=" + activityElement;
+              let response = await fetch(url);
+              let data = await response.json();
+              return data;
           }
+
+          async function createHtmlContent(activities, hobbyName, hobbyImg, userId) {
+              for (let i = 0; i < activities.length; i++) {
+                  var activityElement = activities[i][0];
+                  console.log(activityElement);
+                  let booleanValue = await fetchActivityStatus(userId, activityElement);
+                  let rewards = booleanValue === true ? "Completed" : "30 credits";
+                  console.log(booleanValue);
+
+                  let htmlContent =
+                      htmlStart + activities[i][3] + html1 + rewards + html2 + (i+1).toString() +
+                      html3 + activities[i][1] + html4 + activities[i][2] +
+                      html5 + activityElement + html6;
+
+                  // Select the div with the class 'activity-load'
+                  let activityLoadDiv = document.querySelector(".activity-load");
+
+                  // Add the HTML content to the div
+                  activityLoadDiv.innerHTML += htmlContent;
+              }
+          }
+
+          createHtmlContent(activities, hobbyName, hobbyImg, userId);
         console.log("done");
         $(".loading").hide();
       })

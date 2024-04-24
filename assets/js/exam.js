@@ -1,3 +1,5 @@
+let answers = [];
+
 fetch(
     "https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app/data-duebb/auth/providers/anon-user/login",
     {
@@ -84,7 +86,6 @@ fetch(
                 console.log(result);
                 const parsedResult = JSON.parse(result);
                 const activityName = parsedResult.document.title;
-                let answers = [];
                 $(".activity-title").text(activityName);
                 let options = [];
 
@@ -143,3 +144,86 @@ fetch(
         $(".loading").hide();
 
     });
+
+document.querySelector('.test-button').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+    var reflowAuth = localStorage.getItem("reflowAuth");
+    var parsedReflowAuth = JSON.parse(reflowAuth);
+    var userId = parsedReflowAuth.profile.id;
+    var urlParams = new URLSearchParams(window.location.search);
+    var activity_id = urlParams.get("activity");
+
+    let radioButtons = document.querySelectorAll('input[type="radio"]');
+
+    console.log(answers);
+    let correct = 0;
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            console.log(`Radio button ${i + 1} is checked.`);
+            let radioText = radioButtons[i].labels[0].textContent;
+            if (answers.includes(radioText)) {
+                console.log(`The answer ${radioText} is in the answers array.`);
+                correct++;
+            }
+        }
+    }
+
+    if (correct === 3) {
+        alert("You got all the answers correct!");
+        fetch(
+            "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/addrewards?arg1=" + userId + "&arg2=" + activity_id,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }
+        )
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                window.location.href = "./../../exam-passed.html?reward=" + data;
+            })
+            .catch((error) => {
+                console.error("An error occurred:", error);
+                window.location.href = "./../../404.html";
+
+            });
+    } else {
+        fetch(
+            "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/addattempt?arg1=" +
+            userId + "&arg2=" + activity_id,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }
+        )
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("ADDED ATTEMPT");
+                fetch(
+                    "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/addattempt?arg1=" + userId + "&arg2=" + activity_id,
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    }
+                )
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log(data);
+                    })
+                    .catch((error) => {
+                        console.error("An error occurred:", error);
+                    });
+
+                window.location.href = "./../../exam-failed.html?activity=" + activity_id + "&correct=" + correct;
+            })
+            .catch((error) => {
+                console.error("An error occurred:", error);
+            });
+    }
+});
