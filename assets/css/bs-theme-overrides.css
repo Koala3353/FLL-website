@@ -76,10 +76,18 @@
   width: 22rem;
   height: 28rem;
   border-radius: 1rem;
-  overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   transition: 0.5s;
+}
+
+.shopping-creds-button:hover {
+  color: #FED103!important;
+  border-color: #FED103!important;
+}
+
+.shopping-creds-button {
+  color: white!important;
 }
 
 .profile .profile-image {

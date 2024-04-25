@@ -166,7 +166,6 @@ document.querySelector('.test-button').addEventListener('click', function(e) {
     }
 
     if (correct === 3) {
-        alert("You got all the answers correct!");
         fetch(
             "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/addrewards?arg1=" + userId + "&arg2=" + activity_id,
             {

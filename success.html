@@ -6,7 +6,7 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
   />
-    <title>Congrats!</title>
+    <title>Success</title>
     <link
             rel="icon"
             type="image/x-icon"
@@ -194,7 +194,7 @@
       <div class="col-md-10 text-center">
         <img
                 class="w-100"
-                style="width: 55% !important; height: auto"
+                style="width: 35% !important; height: auto"
                 src="assets/img/illustrations/success.svg"
         />
       </div>
@@ -203,14 +203,15 @@
                 class="display-3 fw-bold mb-4"
                 style="font-family: 'Prosa GT Demo'; color: white"
         >
-          Congratulations!
+          Checkout Successful!
         </h2>
-        <h3 style="color: white" class="output-congrats">          You got a perfect score! Unknown credits have been added to your account!
+        <h3 style="color: white" class="output-checkout-code">
+          loading...
         </h3>
         <!-- Add the button here -->
         <div style="margin-top: 30px">
-          <a href="/activitylist.html" class="btn btn-lg btn-primary"
-          >Return to List</a
+          <a href="/404.html" class="btn btn-lg btn-primary redirect-shop"
+          >Claim</a
           >
         </div>
       </div>
@@ -289,7 +290,7 @@
       >
         <div class="fw-bold d-flex align-items-center mb-2">
           <img
-                  src="./assets/img/fll%20logo%20with%20name%20new.png"
+                  src="../assets/img/fll%20logo%20with%20name%20new.png"
                   width="144"
                   height="67"
           />
@@ -373,12 +374,10 @@
 <script>
   $(window).on("load", function () {
     var urlParams = new URLSearchParams(window.location.search);
-    var reward = urlParams.get("reward");
-    if (reward <= 1) {
-      $(".output-congrats").text("You got a perfect score! " + reward + " credit have been added to your account!");
-    } else {
-      $(".output-congrats").text("You got a perfect score! " + reward + " credits have been added to your account!");
-    }
+    var code = urlParams.get("code");
+    var name = urlParams.get("name");
+    $(".output-checkout-code").text("You have failed the exam by getting " + code + " points (3 points for passing). Kindly try again.");
+    $(".redirect-shop").attr("href", "/exam.html?activity=");
     $(".loading").hide();
   });
 </script>

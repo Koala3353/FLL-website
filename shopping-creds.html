@@ -6,14 +6,17 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
   />
-    <title>Congrats!</title>
-    <link
-            rel="icon"
-            type="image/x-icon"
-            href="/assets/img/fll logo new.png"
-    />
-  <link rel="canonical" href="https://sparkfll.tech/404.html" />
-  <meta property="og:url" content="https://sparkfll.tech/404.html" />
+  <title>Credits Store</title>
+  <link
+          rel="icon"
+          type="image/x-icon"
+          href="/assets/img/fll logo new.png"
+  />
+  <link rel="canonical" href="https://sparkfll.tech/shopping-creds.html" />
+  <meta
+          property="og:url"
+          content="https://sparkfll.tech/shopping-cart.html"
+  />
   <meta
           name="twitter:description"
           content="At Spark, we believe that creativity is the spark that ignites innovation and brings joy to our lives. We are passionate about providing you with the tools and inspiration to unleash your creative potential. Whether you're a seasoned hobbyist or just starting on your creative journey, Spark is your go-to destination for unique and exciting hobby kits."
@@ -50,7 +53,6 @@
   <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
   <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css" />
   <link rel="stylesheet" href="assets/css/Carousel-Multi-Image--ISA-.css" />
-  <link rel="stylesheet" href="assets/css/checkout.css" />
   <link
           rel="stylesheet"
           href="assets/css/Features-Centered-Icons-icons.css"
@@ -63,12 +65,221 @@
   <link rel="stylesheet" href="assets/css/News-Cards.css" />
   <link rel="stylesheet" href="assets/css/Pricing-Centered-badges.css" />
   <link rel="stylesheet" href="assets/css/product-page.css" />
-  <link rel="stylesheet" href="assets/css/specific-product.css" />
   <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
   <link rel="stylesheet" href="assets/css/Video-Responsive.css" />
+    <link rel="stylesheet" href="assets/css/checkout.css" />
+  <script src="
+https://cdn.jsdelivr.net/npm/dompurify@3.1.0/dist/purify.min.js
+"></script>
+  <style>
+    :root {
+      --background: #F8F8FF;
+      --table-background: #FCFCFD;
+      --primary: #272727;
+      --gray: #A0A7B1;
+      --odd-row: #f6f9ff;
+      --th-background: #F4F5FC;
+      --gray-background: #EDEEF1;
+      --gray-mid: #F1F2F6;
+    }
+    .caption-container {
+      font-size: 1.12rem;
+      font-weight: 700;
+      text-align: left;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(
+              --gray-background
+      );
+    }
+
+    .table-widget {
+      border-radius: 1rem;
+      background-color: var(
+              --table-background);
+      padding: 1.5rem;
+      width: 90%;
+      margin: 1rem;
+      max-width: 47.5rem;
+      border: 2px solid var(
+              --gray-background);
+      box-shadow: 0px 4px 16px 0px
+      rgba(148, 156, 169, 0.15);
+      text-align: left;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      overflow-y: auto;
+      padding-bottom: 0.5rem;
+    }
+
+    .table-widget table {
+      max-width: 37.5rem;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .table-widget thead {
+      position: sticky;
+    }
+
+    .table-widget th {
+      padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+      font-size: 0.875rem;
+      color: var(--gray);
+      width: fit-content;
+      white-space: nowrap;
+      background-color: var(
+              --th-background);
+    }
+
+    .table-widget tfoot {
+      margin-top: 1rem;
+      border-top: 2px solid var(
+              --gray-background);
+    }
+
+    .table-widget td {
+      padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+      vertical-align: middle;
+      white-space: nowrap;
+      border-bottom: 2px solid var(
+              --gray-background);
+    }
+
+    .caption-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    .table-row-count {
+      font-size: 0.8rem;
+      font-weight: 700;
+      background-color: var(
+              --gray-mid);
+      padding: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      margin-left: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .stock-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stock-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .stock-info__ticker {
+      font-weight: 700;
+    }
+
+    .stock__name {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .stock img {
+      width: 2.625rem;
+      height: 2.625rem;
+      object-fit: contain;
+      border-radius: 0.5rem;
+    }
+
+    .table-widget {
+      min-height: 5rem;
+    }
+
+    .sticky-left {
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: var(
+              --table-background);
+    }
+
+    .sticky-right {
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: var(
+              --table-background);
+    }
+
+    .caption-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .caption-container svg {
+      margin-top: -0.125rem;
+    }
+
+    .table-title {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+
+    .up {
+      color: #2ECC71;
+    }
+
+    .down {
+      color: #E3452F;
+    }
+
+    .sticky-right button {
+      border-radius: 0.75rem;
+
+      outline: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s
+      ease-in-out;
+      padding: 0.675rem 1rem;
+    }
+
+
+
+
+    .table-wrapper::-webkit-scrollbar {
+      height: 0.75rem;
+    }
+
+    .table-wrapper::-webkit-scrollbar-track {
+      background: var(
+              --gray-mid);
+      border-radius: 0.45rem;
+    }
+
+    .table-wrapper::-webkit-scrollbar-thumb {
+      background: var(
+              --gray);
+      border-radius: 0.4rem;
+    }
+
+    .shopping-creds-general span{
+        color: black!important;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-primary">
 <div
         class="loading"
         style="
@@ -97,6 +308,7 @@
     <div class="white-orbit w3 leo"></div>
   </div>
 </div>
+<div class="loginrequired"></div>
 <nav
         class="navbar navbar-expand-lg fixed-top bg-primary clean-navbar navbar-light"
 >
@@ -186,37 +398,56 @@
     </div>
   </div>
 </nav>
-<section class="py-5 mt-5" style="background-color: #00578f">
-  <div class="container">
-    <div
-            class="row row-cols-1 d-flex justify-content-center align-items-center"
+
+<div class="notification">
+  <div class="notification__body">
+    <img
+            src="./assets/img/exclamation-circle-fill.svg"
+            alt="Warning"
+            class="notification__icon"
     >
-      <div class="col-md-10 text-center">
-        <img
-                class="w-100"
-                style="width: 55% !important; height: auto"
-                src="assets/img/illustrations/success.svg"
-        />
+    ‎ Kindly login first!
+  </div>
+  <div class="notification__progress"></div>
+</div>
+<main
+        class="page shopping-cart-page shopping-creds-general"
+        style="padding-top: 80px; background-color: #00578f"
+>
+  <section
+          class="clean-block dark"
+          style="
+          background-color: #00578f;
+        "
+  >
+    <div class="container">
+      <div class="block-heading">
+        <h1 class="text-center text-light" style="font-family: 'Prosa GT Demo'">
+          Credits Store
+        </h1>
+        <p class="text-center text-light" style="font-family: 'Coolvetica Rg'">
+          Use your credits to purchase items from our store.
+        </p>
       </div>
-      <div class="col text-center">
-        <h2
-                class="display-3 fw-bold mb-4"
-                style="font-family: 'Prosa GT Demo'; color: white"
-        >
-          Congratulations!
-        </h2>
-        <h3 style="color: white" class="output-congrats">          You got a perfect score! Unknown credits have been added to your account!
-        </h3>
-        <!-- Add the button here -->
-        <div style="margin-top: 30px">
-          <a href="/activitylist.html" class="btn btn-lg btn-primary"
-          >Return to List</a
-          >
+        <div  style="display: flex; justify-content: center; align-items: center;">
+      <div class="table-widget" style="font-family: 'Prosa GT Demo'">
+			<span class="caption-container" style="font-family: 'Prosa GT Demo'">
+				<span class="table-title" style="font-family: 'Prosa GT Demo'">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+  <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+</svg>
+					Available Rewards
+				</span>
+				<span class="table-row-count"  style="font-family: 'Prosa GT Demo'"></span>
+			</span>
+        <div class="table-wrapper" style="font-family: 'Prosa GT Demo'">
+          <!-- generate table here -->
         </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
+</main>
 <footer class="text-light text-bg-primary">
   <div class="container py-4 py-lg-5">
     <div class="row justify-content-center">
@@ -289,7 +520,7 @@
       >
         <div class="fw-bold d-flex align-items-center mb-2">
           <img
-                  src="./assets/img/fll%20logo%20with%20name%20new.png"
+                  src="../assets/img/fll%20logo%20with%20name%20new.png"
                   width="144"
                   height="67"
           />
@@ -366,23 +597,19 @@
         src="https://cdn.reflowhq.com/v2/toolkit.min.js"
         data-reflow-store="44259567"
 ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/js/bs-init.js"></script>
 <script src="assets/js/baguetteBox.min.js"></script>
 <script src="assets/js/vanilla-zoom.js"></script>
 <script src="assets/js/theme.js"></script>
 <script>
-  $(window).on("load", function () {
-    var urlParams = new URLSearchParams(window.location.search);
-    var reward = urlParams.get("reward");
-    if (reward <= 1) {
-      $(".output-congrats").text("You got a perfect score! " + reward + " credit have been added to your account!");
-    } else {
-      $(".output-congrats").text("You got a perfect score! " + reward + " credits have been added to your account!");
-    }
-    $(".loading").hide();
+  $(document).ready(function () {
+    $("label:has(span:contains(Email))").addClass("important-background");
   });
 </script>
+<script src="./assets/js/shopping-creds.js"></script>
 
+<script src="./assets/js/logincheck.js"></script>
 <script>
   var reflowAuth = localStorage.getItem("reflowAuth");
   var parsedReflowAuth = JSON.parse(reflowAuth);
@@ -404,6 +631,8 @@
                     '              <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>\n' +
                     '              <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>\n' +
                     '            </svg>').append(creditsText);
+            $(".loading").hide();
+
           })
           .catch(error => console.error('Error:', error));  </script>
 </body>
