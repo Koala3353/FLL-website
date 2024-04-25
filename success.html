@@ -210,8 +210,8 @@
         </h3>
         <!-- Add the button here -->
         <div style="margin-top: 30px">
-          <a href="/404.html" class="btn btn-lg btn-primary redirect-shop"
-          >Claim</a
+          <a href="/404.html" target="_blank" class="btn btn-lg btn-primary redirect-shop"
+          >Claim Reward</a
           >
         </div>
       </div>
@@ -376,8 +376,17 @@
     var urlParams = new URLSearchParams(window.location.search);
     var code = urlParams.get("code");
     var name = urlParams.get("name");
-    $(".output-checkout-code").text("You have failed the exam by getting " + code + " points (3 points for passing). Kindly try again.");
-    $(".redirect-shop").attr("href", "/exam.html?activity=");
+    // hashmap of name to url
+    var nameToUrl = {
+      "Amazon": "https://www.amazon.com/gc/redeem",
+      "Apple": "http://apple.com/redeem",
+      "Google": "https://play.google.com/redeem",
+      "Playstation": "https://www.playstation.com/en-ph/support/store/redeem-ps-store-voucher-code/",
+      "Steam": "https://store.steampowered.com/account/redeemwalletcode",
+      "Xbox": "https://redeem.microsoft.com/",
+    };
+    $(".output-checkout-code").html("You successfully claimed the voucher. Here is the code: <b>" + code + "</b>");
+    $(".redirect-shop").attr("href", nameToUrl[name]);
     $(".loading").hide();
   });
 </script>
