@@ -175,7 +175,7 @@
             "
       ></div>
       <a
-              class="btn  bg-primary border rounded-pill border-3 shopping-creds-button"
+              class="btn creds-shop-button bg-primary border rounded-pill border-3 shopping-creds-button"
               role="button"
               style="
               position: relative;
@@ -416,6 +416,16 @@
           .catch(error => {
             console.error('Error:', error);
             $(".loading").hide();
-          });  </script>
+          });
+  fetch("https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/getaccess?arg1=" + userId)
+          .then(response => response.json())
+          .then(data => {
+            let access = data;
+            if (access === true) {
+              $(".creds-shop-button").addClass("disabled");
+            }
+          })
+          .catch(error => console.error('Error:', error));
+</script>
 </body>
 </html>

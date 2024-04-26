@@ -73,6 +73,34 @@
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <style>
+
+      .video-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #282828b3 25%, #28282800 44%);
+        z-index: 1;
+      }
+
+      .video-section > * {
+        position: relative;
+        z-index: 2;
+      }
+
+
+      .text {
+        text-align: left;
+        position: absolute;
+        left: 10%; /* Adjust as needed */
+        color: #fff; /* Text color */
+        z-index: 2;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -210,9 +238,8 @@
       </div>
     </nav>
     <main class="page landing-page" style="background-color: #00416c">
-
       <section
-        class="border rounded-0 clean-block clean-hero"
+        class="border rounded-0 clean-block clean-hero video-section"
         id="home"
         style="
           background-image: url('./assets/img/fll logo with name new.png');
@@ -221,34 +248,28 @@
         "
       >
         <video
-          width="560"
-          height="315"
+
           style="
             position: absolute;
             top: 50%;
             left: 50%;
             min-width: 100%;
             min-height: 100%;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
             z-index: 0;
             transform: translate(-50%, -50%);
-            object-fit: contain;
+            object-fit: cover;
           "
           autoplay=""
           muted=""
           loop=""
           playsinline=""
         >
-          <source src="./assets/img/VID%20HALLWAY.webm" type="video/webm" />
+          <source src="./assets/img/mainvid.mov" type="video/webm" />
         </video>
         <div
           class="text"
-          style="
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 20px 80px;
-            border-radius: 10px;
-          "
         >
           <h2
             style="
@@ -258,7 +279,7 @@
               padding-top: 0px;
               padding-bottom: 0px;
               margin-bottom: -36px;
-              color: #365486;
+              color: white;
             "
           >
             Introducing
@@ -268,7 +289,7 @@
               font-family: 'mainPAGE';
               font-size: 105px;
               padding-top: 0px;
-              color: #365486;
+              color: #FED103;
               padding-bottom: 0px;
             "
           >
@@ -283,13 +304,15 @@
               padding-bottom: 0px;
               padding-top: 0px;
               margin-top: -58px;
-              color: #365486;
+              color: white;
             "
           >
             Where Creativity Ignites!
           </p>
         </div>
       </section>
+
+
       <section style="background-color: white">
         <div
           class="container bg-primary-gradient py-5"
@@ -996,41 +1019,7 @@
             aria-label="Slide 8"
             class=""
           ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"
-            class=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="9"
-            aria-label="Slide 10"
-            class=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="10"
-            aria-label="Slide 11"
-            class=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="11"
-            aria-label="Slide 12"
-            class=""
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="12"
-            aria-label="Slide 13"
-            class=""
-          ></button>
+
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -1046,15 +1035,14 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Carefully Crafted Kits</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Unlock your creativity with our carefully crafted kits designed to inspire and empower.
                 </p>
                 <p>
                   <a class="btn btn-lg btn-primary" href="./product-page.html"
@@ -1069,7 +1057,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/haley1.png"
+              src="./assets/img/carousel/creditshop.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1077,19 +1065,18 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Multiple Rewards Available</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Unlock a world of possibilities with multiple rewards
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
+                  <a class="btn btn-lg btn-primary" href="./index.html#subscriptions"
+                    >View Subscriptions</a
                   >
                 </p>
               </div>
@@ -1100,7 +1087,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/Sydney-Drawing1.jpg"
+              src="./assets/img/carousel/topics.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1108,19 +1095,18 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Numerous topics to choose</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Explore a plethora of subjects with our diverse range of topics.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
+                  <a class="btn btn-lg btn-primary" href="./index.html#subscriptions"
+                  >View Subscriptions</a
                   >
                 </p>
               </div>
@@ -1131,7 +1117,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/reisha1.png"
+              src="./assets/img/carousel/vids.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1139,140 +1125,14 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Countless tutorials available</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              src="./assets/img/carousel/Carsten-Drawing2.jpg"
-              alt="Description of the image"
-            />
-            <div class="container">
-              <div
-                class="carousel-caption text-start"
-                style="
-                  color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
-                  padding: 25px;
-                  border-radius: 5px;
-                "
-              >
-                <h1>Wowie a kit !</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              src="./assets/img/carousel/haley2.png"
-              alt="Description of the image"
-            />
-            <div class="container">
-              <div
-                class="carousel-caption text-start"
-                style="
-                  color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
-                  padding: 25px;
-                  border-radius: 5px;
-                "
-              >
-                <h1>Wowie a kit !</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              src="./assets/img/carousel/Sydney-Drawing2.jpg"
-              alt="Description of the image"
-            />
-            <div class="container">
-              <div
-                class="carousel-caption text-start"
-                style="
-                  color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
-                  padding: 25px;
-                  border-radius: 5px;
-                "
-              >
-                <h1>Wowie a kit !</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              src="./assets/img/carousel/reisha2.png"
-              alt="Description of the image"
-            />
-            <div class="container">
-              <div
-                class="carousel-caption text-start"
-                style="
-                  color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
-                  padding: 25px;
-                  border-radius: 5px;
-                "
-              >
-                <h1>Wowie a kit !</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Unlock boundless knowledge with our extensive array of tutorials.
                 </p>
                 <p>
                   <a class="btn btn-lg btn-primary" href="./product-page.html"
@@ -1288,7 +1148,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/Carsten-Drawing3.jpg"
+              src="./assets/img/carousel/stepbystep.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1296,15 +1156,14 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Step by Step Tutorials</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Comprehensive videos with the step by step tutorials.
                 </p>
                 <p>
                   <a class="btn btn-lg btn-primary" href="./product-page.html"
@@ -1319,7 +1178,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/haley3.png"
+              src="./assets/img/carousel/teampic.jpg"
               alt="Description of the image"
             />
             <div class="container">
@@ -1327,19 +1186,18 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Meet the Team</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Teamwork makes the dream work!
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
+                  <a class="btn btn-lg btn-primary" href="./fll.html"
+                    >View FLL page</a
                   >
                 </p>
               </div>
@@ -1350,7 +1208,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/Sydney-Drawing3.JPG"
+              src="./assets/img/carousel/subscription.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1358,19 +1216,18 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Multiple Subscriptions Available</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  Gaim more access through our multiple subscriptions.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
+                  <a class="btn btn-lg btn-primary" href="./index.html#subscriptions"
+                  >View Subscriptions</a
                   >
                 </p>
               </div>
@@ -1381,7 +1238,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/Carsten-Drawing4.jpg"
+              src="./assets/img/carousel/app.png"
               alt="Description of the image"
             />
             <div class="container">
@@ -1389,46 +1246,14 @@
                 class="carousel-caption text-start"
                 style="
                   color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
+                  background-color: rgba(255, 255, 255, 0.8);
                   padding: 25px;
                   border-radius: 5px;
                 "
               >
-                <h1>Wowie a kit !</h1>
+                <h1>Comprehensive Music App</h1>
                 <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="./product-page.html"
-                    >Buy Kits</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              src="./assets/img/carousel/Sydney-Drawing4.JPG"
-              alt="Description of the image"
-            />
-            <div class="container">
-              <div
-                class="carousel-caption text-start"
-                style="
-                  color: black;
-                  background-color: rgba(255, 255, 255, 0.6);
-                  padding: 25px;
-                  border-radius: 5px;
-                "
-              >
-                <h1>Wowie a kit !</h1>
-                <p>
-                  Some representative placeholder content for the first slide of
-                  the carousel.
+                  This app is the only thing you'll ever need for your musical journey.
                 </p>
                 <p>
                   <a class="btn btn-lg btn-primary" href="./product-page.html"
@@ -2056,12 +1881,8 @@
           scrollTo: { y: "#subscriptions", offsetY: 70 },
         });
       });
-    </script>
+      $(".loading").hide();
 
-    <script>
-      $(window).on("load", function () {
-        $(".loading").hide();
-      });
     </script>
   </body>
 </html>
