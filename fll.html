@@ -72,6 +72,32 @@
   <link rel="stylesheet" href="assets/css/Pricing-Centered-badges.css" />
   <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
   <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+  <style>
+    .video-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #282828b3 25%, #28282800 44%);
+      z-index: 1;
+    }
+
+    .video-section > * {
+      position: relative;
+      z-index: 2;
+    }
+
+
+    .text {
+      text-align: left;
+      position: absolute;
+      left: 10%; /* Adjust as needed */
+      color: #fff; /* Text color */
+      z-index: 2;
+    }
+  </style>
 </head>
 
 <body>
@@ -210,7 +236,7 @@
 </nav>
 <main class="page landing-page">
   <section
-          class="border rounded-0 clean-block clean-hero"
+          class="border rounded-0 clean-block clean-hero video-section"
           id="home"
           style="
           background-image: url('./assets/img/fll logo with name new.png');
@@ -219,33 +245,28 @@
         "
   >
     <video
-            width="560"
-            height="315"
+
             style="
             position: absolute;
             top: 50%;
             left: 50%;
             min-width: 100%;
             min-height: 100%;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
             z-index: 0;
             transform: translate(-50%, -50%);
+            object-fit: cover;
           "
             autoplay=""
             muted=""
             loop=""
             playsinline=""
     >
-      <source src="./assets/img/fllvid.webm" type="video/mp4" />
+      <source src="./assets/img/fllvid.webm" type="video/webm" />
     </video>
     <div
             class="text"
-            style="
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-          "
     >
       <h2
               style="
@@ -255,7 +276,7 @@
               padding-top: 0px;
               padding-bottom: 0px;
               margin-bottom: -36px;
-              color: #365486;
+              color: white;
             "
       >
         FLL 2024
@@ -265,7 +286,7 @@
               font-family: 'mainPAGE';
               font-size: 105px;
               padding-top: 0px;
-              color: #365486;
+              color: #FED103;
               padding-bottom: 0px;
             "
       >
@@ -280,10 +301,10 @@
               padding-bottom: 0px;
               padding-top: 0px;
               margin-top: -58px;
-              color: #365486;
+              color: white;
             "
       >
-        by Philippines Grace Robotics Team
+        by Phillipines Grace Robotics Team
       </p>
     </div>
   </section>
@@ -551,7 +572,7 @@
                 <div class="profile-name">
                   <h2>Sydney Tan</h2>
                   <div class="profile-bio">
-                    <b>The Apprentice</b>
+                    <b>The Prodigy</b>
                   </div>
                 </div>
               </div>
