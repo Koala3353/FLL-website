@@ -189,8 +189,7 @@ fetch(
           async function fetchActivityStatus(userId, activityElement) {
               let url = "https://ap-southeast-1.aws.data.mongodb-api.com/app/data-duebb/endpoint/activitystatus?arg1=" + userId + "&arg2=" + activityElement;
               let response = await fetch(url);
-              let data = await response.json();
-              return data;
+              return await response.json();
           }
 
           async function createHtmlContent(activities, hobbyName, hobbyImg, userId) {

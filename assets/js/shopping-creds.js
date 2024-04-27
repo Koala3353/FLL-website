@@ -77,7 +77,6 @@ const stocks = [
 let tableRowCount = document.getElementsByClassName('table-row-count');
 tableRowCount[0].innerHTML = `${stocks.length} Available`;
 
-let tableBody = document.getElementById('table-rows');
 
 const mappedRecords = stocks
     .map(
@@ -135,7 +134,7 @@ tableWrapper.innerHTML = DOMPurify.sanitize(`
 stocks.forEach(stock => {
     const button = document.querySelector(`.${stock.ticker}`);
     if (button) {
-        button.addEventListener('click', (event) => {
+        button.addEventListener('click', () => {
             // Handle the click event here
 
             $(".loading").show();

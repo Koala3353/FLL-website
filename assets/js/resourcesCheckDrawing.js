@@ -43,7 +43,7 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
                 console.log("Pencils/Sketching");
             }
 })
-        .catch((error) => {
+        .catch(() => {
             window.location.href = "./../../../../404.html";
         });
 })

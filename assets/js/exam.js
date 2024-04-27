@@ -196,7 +196,7 @@ document.querySelector('.test-button').addEventListener('click', function(e) {
             }
         )
             .then((response) => response.json())
-            .then((data) => {
+            .then(() => {
                 window.location.href = "./../../exam-failed.html?activity=" + activity_id + "&correct=" + correct;
             })
             .catch((error) => {

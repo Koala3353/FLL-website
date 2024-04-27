@@ -53,7 +53,7 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
             $(".loading").hide();
 
         })
-        .catch((error) => {
+        .catch(() => {
             $('.music-download-restrict').addClass('disabled');
             $('.hobby-download-restrict').addClass('disabled');
             $(".loading").hide();

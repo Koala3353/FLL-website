@@ -57,7 +57,7 @@ fetch("https://ap-southeast-1.aws.services.cloud.mongodb.com/api/client/v2.0/app
 
             }
 })
-        .catch((error) => {
+        .catch(() => {
             $('#no-tuts').removeAttr('hidden');
             $(".loading").hide();
 
