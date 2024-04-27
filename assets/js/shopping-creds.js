@@ -151,6 +151,12 @@ stocks.forEach(stock => {
 
                     }
 
+                    if (!credits) {
+                        alert("You do not have enough credits to purchase this item");
+                        $(".loading").hide();
+                        return;
+                    }
+
                     let randomCode = randomCodes[Math.floor(Math.random() * randomCodes.length)];
                     var reflowAuth = localStorage.getItem("reflowAuth");
                     var parsedReflowAuth = JSON.parse(reflowAuth);
@@ -166,18 +172,21 @@ stocks.forEach(stock => {
                         .then(data => {
                             console.log('Success:', data, stock.price);
                             window.location.href = `./success.html?code=${randomCode}&name=${stock.ticker}`;
-
                         })
                         .catch((error) => {
                             console.error('Error:', error);
                             alert("An error occured: " + error);
                             $(".loading").hide();
+                            return;
                         });
                 })
                 .catch(error => {
                     console.error('Error:', error);
                     $(".loading").hide();
+                    return;
                 });
+
+
         });
     }
 });
