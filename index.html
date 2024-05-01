@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>SPARK</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/fll logo new.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/fll%20logo%20new.webp" />
     <link rel="canonical" href="https://sparkfll.tech/" />
     <meta property="og:url" content="https://sparkfll.tech/" />
     <meta
@@ -81,7 +81,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, #282828b3 25%, #28282800 44%);
+        background: linear-gradient(90deg, #282828b3 15%, #28282800 44%);
         z-index: 1;
       }
 
@@ -96,6 +96,21 @@
         left: 10%; /* Adjust as needed */
         color: #fff; /* Text color */
         z-index: 2;
+      }
+
+      .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* for 16:9 aspect ratio. Change as needed */
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -238,33 +253,31 @@
       <section
         class="border rounded-0 clean-block clean-hero video-section"
         id="home"
-        style="
-          background-image: url('./assets/img/fll logo with name new.png');
-          color: rgba(173, 216, 230, 0);
-          overflow: hidden;
-        "
+        style="color: rgba(173, 216, 230, 0); overflow: hidden"
       >
-        <video
-          id="video-mainvid"
-          style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-          "
-          autoplay=""
-          muted=""
-          loop=""
-          playsinline=""
-        >
-          <source src="./assets/img/mainvid.webm" type="video/webm" />
-        </video>
+        <div class="video-container">
+          <video
+            id="video-mainvid"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              min-width: 100%;
+              min-height: 100%;
+              width: 100%;
+              height: 100%;
+              z-index: 0;
+              transform: translate(-50%, -50%);
+              object-fit: cover;
+            "
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+          >
+            <source src="./assets/img/mainvid.webm" type="video/webm" />
+          </video>
+        </div>
         <div class="text">
           <h2
             style="
@@ -295,15 +308,14 @@
               font-family: 'Prosa GT Demo';
               font-size: 24px;
               margin-bottom: 26px;
-              padding-bottom: 0px;
-              padding-top: 0px;
+              padding-bottom: 0;
+              padding-top: 0;
               margin-top: -58px;
               color: white;
             "
           >
             Where Creativity Ignites!
           </p>
-
         </div>
       </section>
 
@@ -517,7 +529,7 @@
                 <img
                   class="card-img-top w-100 d-block fit-cover"
                   style="height: 200px"
-                  src="assets/img/kits/watercolor.jpg"
+                  src="assets/img/kits/watercolor.webp"
                 />
                 <div class="card-body p-4" style="background-color: #00416c">
                   <h2
@@ -622,7 +634,7 @@
                 <img
                   class="card-img-top w-100 d-block fit-cover"
                   style="height: 200px"
-                  src="./assets/img/kits/arduino.jpg"
+                  src="./assets/img/kits/arduino.webp"
                 />
                 <div class="card-body p-4" style="background: #00416c">
                   <h2
@@ -1178,7 +1190,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/teampic.jpg"
+              src="./assets/img/carousel/teampic.webp"
               alt="Description of the image"
             />
             <div class="container">
@@ -1206,7 +1218,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/subscription.png"
+              src="./assets/img/carousel/subscription.webp"
               alt="Description of the image"
             />
             <div class="container">
@@ -1236,7 +1248,7 @@
               class="bd-placeholder-img"
               width="100%"
               height="100%"
-              src="./assets/img/carousel/app.png"
+              src="./assets/img/carousel/app.webp"
               alt="Description of the image"
             />
             <div class="container">
@@ -1318,7 +1330,7 @@
               <img
                 class="card-img-top w-100 d-block fit-cover"
                 style="height: 200px"
-                src="./assets/img/reviews/1.png"
+                src="./assets/img/reviews/1.webp"
               />
               <div class="card-body p-4" style="background: #00416c">
                 <p class="fs-1 text-center card-text">
@@ -1389,7 +1401,7 @@
                     class="rounded-circle flex-shrink-0 me-3 fit-cover"
                     width="50"
                     height="50"
-                    src="./assets/img/pfp/1.jpg"
+                    src="./assets/img/pfp/1.webp"
                   />
                   <div>
                     <p
@@ -1434,7 +1446,7 @@
               <img
                 class="card-img-top w-100 d-block fit-cover"
                 style="height: 200px"
-                src="./assets/img/reviews/2.png"
+                src="./assets/img/reviews/2.webp"
               />
               <div class="card-body p-4" style="background: #00416c">
                 <p class="fs-1 text-center card-text">
@@ -1505,7 +1517,7 @@
                     class="rounded-circle flex-shrink-0 me-3 fit-cover"
                     width="50"
                     height="50"
-                    src="./assets/img/pfp/2.jpg"
+                    src="./assets/img/pfp/2.webp"
                   />
                   <div>
                     <p
@@ -1550,7 +1562,7 @@
               <img
                 class="card-img-top w-100 d-block fit-cover"
                 style="height: 200px"
-                src="./assets/img/reviews/3.jpg"
+                src="./assets/img/reviews/3.webp"
               />
               <div class="card-body p-4" style="background: #00416c">
                 <p class="fs-1 text-center card-text">
@@ -1621,7 +1633,7 @@
                     class="rounded-circle flex-shrink-0 me-3 fit-cover"
                     width="50"
                     height="50"
-                    src="./assets/img/pfp/4.jpg"
+                    src="./assets/img/pfp/4.webp"
                   />
                   <div>
                     <p
