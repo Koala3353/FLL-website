@@ -27,7 +27,7 @@ const stocks = [
         name: 'Amazon Gift Cards',
         ticker: 'Amazon',
         price: 3200,
-        marketCap: '50 dollars',
+        marketCap: '5 dollars',
         volume: '100 remaining',
     },
     {
@@ -51,7 +51,7 @@ const stocks = [
         name: 'Playstation Gift Cards',
         ticker: 'Playstation',
         price: 1600,
-        marketCap: '25 dollars',
+        marketCap: '5 dollars',
         volume: '15 remaining',
     },
 
@@ -60,7 +60,7 @@ const stocks = [
         name: 'Steam Gift Cards',
         ticker: 'Steam',
         price: 1300,
-        marketCap: '20 dollars',
+        marketCap: '5 dollars',
         volume: '30 remaining',
     },
     {
@@ -68,7 +68,7 @@ const stocks = [
         name: 'Xbox Gift Cards',
         ticker: 'Xbox',
         price: 1600,
-        marketCap: '25 dollars',
+        marketCap: '5 dollars',
         volume: '10 remaining',
     },
 ]
@@ -104,7 +104,7 @@ const mappedRecords = stocks
     </td>
 
     <td class="sticky-right">
-        <button class="btn btn-primary ${stock.ticker}">Purchase</button>
+        <button class="btn btn-primary ${stock.ticker}">Redeem</button>
     </td>
 </tr>`;
         });
