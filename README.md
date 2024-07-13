@@ -11,6 +11,21 @@ Welcome to the Spark Hobby Kit website! This platform provides various tools and
 ## Reason for making this
 - This was our project ouput for the open category in a FLL at Philippines contest last February 2024 and updated for the FLL Euro Championship in Norway on May 2024
 
+## Features
+
+- **Dynamic Content:** Utilizes JavaScript to fetch and display user-specific data, such as credits and access permissions.
+- **Responsive Design:** Fully responsive web design ensuring a seamless experience across various devices and screen sizes.
+- **Interactive Elements:** Enhanced user interaction with animations and dynamic content loading using AOS (Animate On Scroll) library and GSAP for smooth scrolling.
+- **Secure Authentication:** Integration with Reflow for secure user authentication and management.
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Bootstrap, custom styles)
+- JavaScript (jQuery, GSAP, AOS)
+- Sentry for error tracking
+- MongoDB for database management
+  
 ## Web pages
   - Home Page
   - Pricing Page
