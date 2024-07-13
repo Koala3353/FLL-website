@@ -2,6 +2,9 @@
 
 This project is a website for Spark Hobby Kit, a platform that provides tools and inspiration to unleash your creative potential.
 
+## IMPORTANT: Add a FLL-website to the link if you would navigate around the [website](https://koala3353.github.io/FLL-website/). The website was initially made for a custom domain and not github's. 
+- Example: koala3353.github.io/resources/resources.html -> koala3353.github.io/***FLL-website***/resources/resources.html
+
 ## Overview
 Welcome to the Spark Hobby Kit website! This platform provides various tools and inspiration to help you explore and expand your creative potential. Here you will find everything from pricing details to video tutorials, manuals, and much more.
 
